@@ -11,7 +11,7 @@ const groups = getToc();
   <div class="max-w-4xl mx-auto space-y-8">
     <header class="text-center space-y-4">
       <img src={`${baseUrl}/logo.png`} alt={project.game} class="mx-auto h-24 w-auto object-contain" />
-      <h1 class="page-title ink-heading text-3xl sm:text-4xl font-serif font-semibold">{project.defaultTitle}</h1>
+      <h1 class="page-title" data-title={project.defaultTitle}>{project.defaultTitle}</h1>
       <div class="page-title-rule mx-auto" aria-hidden="true"><span></span></div>
       <p class="text-sm text-slate-400">By AdrenalineSL &amp; Azaroth, version 2.0 (8/14/02)</p>
       <a class="progress-resume" data-progress-resume href={`${baseUrl}/`} hidden>Continue reading</a>
