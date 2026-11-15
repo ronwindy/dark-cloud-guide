@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+import { pages, groups } from '../lib/guideData';
+interface Props { id: string; title: string; mainClass?: string; html: string; }
+const { id, title, mainClass = 'page', html } = Astro.props;
+const manifestJs =
+  'window.DC_PAGES=' + JSON.stringify(pages) + ';window.DC_GROUPS=' + JSON.stringify(groups) + ';';
+const themeJs = "try{var t=localStorage.getItem('dc_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}";
+---
+<!doctype html>
+<html lang="en" data-page={id}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <script is:inline set:html={themeJs}></script>
+</head>
+<body class="">
+  <header class="topbar">
+    <button class="iconbtn" id="menuBtn" aria-label="Menu" title="Menu (m)"><svg class="ic"><use href="#i-menu"></use></svg></button>
+    <a class="brand" href="index.html"><svg class="ic"><use href="#i-cloud"></use></svg><span>Dark Cloud Chronicle</span></a>
+    <div class="tools"><button class="iconbtn" id="themeBtn" title="Day / night parchment (t)"><svg class="ic"><use href="#i-moonsun"></use></svg></button></div>
+  </header>
+  <div class="shade" id="shade"></div>
+  <aside class="side" id="side"><nav id="nav" aria-label="Guide contents"></nav></aside>
+  <main class={mainClass} id="main" set:html={html}></main>
+  <script is:inline set:html={manifestJs}></script>
+  <script>import '../scripts/main.js';</script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+{
+  "groups": [
+    {
+      "id": "intro",
+      "title": "Prologue",
+      "icon": "scroll"
+    },
+    {
+      "id": "g1",
+      "title": "Controls & Gameplay",
+      "icon": "pad"
+    },
+    {
+      "id": "g2",
+      "title": "Dark Story",
+      "icon": "book"
+    },
+    {
+      "id": "g3",
+      "title": "Walkthrough",
+      "icon": "map"
+    },
+    {
+      "id": "g4",
+      "title": "Rebuilding the Villages",
+      "icon": "house"
+    },
+    {
+      "id": "g5",
+      "title": "All Things Weapons",
+      "icon": "sword"
+    },
+    {
+      "id": "g6",
+      "title": "Bestiary",
+      "icon": "skull"
+    },
+    {
+      "id": "g7",
+      "title": "Boss Strategies",
+      "icon": "crown"
+    },
+    {
+      "id": "g8",
+      "title": "Item List",
+      "icon": "chest"
+    },
+    {
+      "id": "g9",
+      "title": "Miscellaneous",
+      "icon": "key"
+    },
+    {
+      "id": "g10",
+      "title": "Outro",
+      "icon": "seal"
+    }
+  ],
+  "pages": [
+    {
+      "id": "welcome",
+      "group": "intro",
+      "title": "Welcome & Overview",
+      "file": "welcome.html"
+    },
+    {
+      "id": "controls",
+      "group": "g1",
+      "title": "Controls",
+      "file": "controls.html"
+    },
+    {
+      "id": "concepts",
+      "group": "g1",
+      "title": "Dark Cloud Concepts",
+      "file": "concepts.html"
+    },
+    {
+      "id": "exploration",
+      "group": "g1",
+      "title": "Exploration Mode",
+      "file": "exploration.html"
+    },
+    {
+      "id": "battle",
+      "group": "g1",
+      "title": "Battle Mode",
+      "file": "battle.html"
+    },
+    {
+      "id": "fishing",
+      "group": "g1",
+      "title": "Fishing",
+      "file": "fishing.html"
+    },
+    {
+      "id": "story",
+      "group": "g2",
+      "title": "The Dark Story",
+      "file": "story.html"
+    },
+    {
+      "id": "characters",
+      "group": "g2",
+      "title": "Characters",
+      "file": "characters.html"
+    },
+    {
+      "id": "ch1",
+      "group": "g3",
+      "title": "Chapter One: Norune Village & Divine Beast Cave",
+      "file": "ch1.html"
+    },
+    {
+      "id": "ch2",
+      "group": "g3",
+      "title": "Chapter Two: Matataki Village & Wise Owl Forest",
+      "file": "ch2.html"
+    },
+    {
+      "id": "ch3",
+      "group": "g3",
+      "title": "Chapter Three: Queens & the Shipwreck",
+      "file": "ch3.html"
+    },
+    {
+      "id": "ch4",
+      "group": "g3",
+      "title": "Chapter Four: Muska Lacka & Sun and Moon Temple",
+      "file": "ch4.html"
+    },
+    {
+      "id": "ch5",
+      "group": "g3",
+      "title": "Chapter Five: Yellow Drops & the Moon Sea",
+      "file": "ch5.html"
+    },
+    {
+      "id": "ch6",
+      "group": "g3",
+      "title": "Chapter Six: Dark Heaven Castle & Gallery of Time",
+      "file": "ch6.html"
+    },
+    {
+      "id": "demon",
+      "group": "g3",
+      "title": "Bonus Dungeon: The Demon Shaft",
+      "file": "demon.html"
+    },
+    {
+      "id": "norune1",
+      "group": "g4",
+      "title": "Norune Village (1/2)",
+      "file": "norune1.html"
+    },
+    {
+      "id": "norune2",
+      "group": "g4",
+      "title": "Norune Village (2/2)",
+      "file": "norune2.html"
+    },
+    {
+      "id": "matataki1",
+      "group": "g4",
+      "title": "Matataki Village (1/2)",
+      "file": "matataki1.html"
+    },
+    {
+      "id": "matataki2",
+      "group": "g4",
+      "title": "Matataki Village (2/2)",
+      "file": "matataki2.html"
+    },
+    {
+      "id": "queens1",
+      "group": "g4",
+      "title": "Queens (1/2)",
+      "file": "queens1.html"
+    },
+    {
+      "id": "queens2",
+      "group": "g4",
+      "title": "Queens (2/2)",
+      "file": "queens2.html"
+    },
+    {
+      "id": "muska",
+      "group": "g4",
+      "title": "Muska Lacka",
+      "file": "muska.html"
+    },
+    {
+      "id": "moonfac1",
+      "group": "g4",
+      "title": "Moon Factory (1/2)",
+      "file": "moonfac1.html"
+    },
+    {
+      "id": "moonfac2",
+      "group": "g4",
+      "title": "Moon Factory (2/2)",
+      "file": "moonfac2.html"
+    },
+    {
+      "id": "gallery",
+      "group": "g4",
+      "title": "Gallery of Time",
+      "file": "gallery.html"
+    },
+    {
+      "id": "wintro",
+      "group": "g5",
+      "title": "Weapons: The Basics",
+      "file": "wintro.html"
+    },
+    {
+      "id": "wtoan",
+      "group": "g5",
+      "title": "Weapon Statistics: Toan",
+      "file": "wtoan.html"
+    },
+    {
+      "id": "wxiao",
+      "group": "g5",
+      "title": "Weapon Statistics: Xiao",
+      "file": "wxiao.html"
+    },
+    {
+      "id": "wgoro",
+      "group": "g5",
+      "title": "Weapon Statistics: Goro",
+      "file": "wgoro.html"
+    },
+    {
+      "id": "wruby",
+      "group": "g5",
+      "title": "Weapon Statistics: Ruby",
+      "file": "wruby.html"
+    },
+    {
+      "id": "wungaga",
+      "group": "g5",
+      "title": "Weapon Statistics: Ungaga",
+      "file": "wungaga.html"
+    },
+    {
+      "id": "wosmond",
+      "group": "g5",
+      "title": "Weapon Statistics: Osmond",
+      "file": "wosmond.html"
+    },
+    {
+      "id": "wevo",
+      "group": "g5",
+      "title": "Weapon Evolutions",
+      "file": "wevo.html"
+    },
+    {
+      "id": "wflow1",
+      "group": "g5",
+      "title": "Weapon Flowcharts (1/2)",
+      "file": "wflow1.html"
+    },
+    {
+      "id": "wflow2",
+      "group": "g5",
+      "title": "Weapon Flowcharts (2/2)",
+      "file": "wflow2.html"
+    },
+    {
+      "id": "wabil",
+      "group": "g5",
+      "title": "Weapon Abilities",
+      "file": "wabil.html"
+    },
+    {
+      "id": "wsecret",
+      "group": "g5",
+      "title": "Secret Weapons",
+      "file": "wsecret.html"
+    },
+    {
+      "id": "wattach",
+      "group": "g5",
+      "title": "Attachments",
+      "file": "wattach.html"
+    },
+    {
+      "id": "whints",
+      "group": "g5",
+      "title": "Weapon-Building Hints",
+      "file": "whints.html"
+    },
+    {
+      "id": "bestiary1",
+      "group": "g6",
+      "title": "Bestiary",
+      "file": "bestiary1.html"
+    },
+    {
+      "id": "bestiary2",
+      "group": "g6",
+      "title": "Bestiary",
+      "file": "bestiary2.html"
+    },
+    {
+      "id": "bestiary3",
+      "group": "g6",
+      "title": "Bestiary",
+      "file": "bestiary3.html"
+    },
+    {
+      "id": "bosses",
+      "group": "g7",
+      "title": "Boss Strategies",
+      "file": "bosses.html"
+    },
+    {
+      "id": "items",
+      "group": "g8",
+      "title": "Item List",
+      "file": "items.html"
+    },
+    {
+      "id": "tips1",
+      "group": "g9",
+      "title": "Tips & Tricks (1/2)",
+      "file": "tips1.html"
+    },
+    {
+      "id": "tips2",
+      "group": "g9",
+      "title": "Tips & Tricks (2/2)",
+      "file": "tips2.html"
+    },
+    {
+      "id": "faq",
+      "group": "g9",
+      "title": "Frequently Asked Questions",
+      "file": "faq.html"
+    },
+    {
+      "id": "outro",
+      "group": "g10",
+      "title": "Outro, Credits & Legal",
+      "file": "outro.html"
+    }
+  ]
+}

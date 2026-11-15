@@ -1,0 +1,32 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python cache & virtual envs
+__pycache__/
+*.py[cod]
+*.class
+.venv/
+venv/
+env/
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary & Log files
+*.log
+
+# Node & Astro Build
+node_modules/
+dist/
+.astro/
+
+# One-time scripts
+scratch/
+
+# Original guide text (reference only)
+raw-sources/

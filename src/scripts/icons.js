@@ -1,0 +1,29 @@
+// SVG icon sprite: each icon becomes a <symbol id="i-NAME"> used via <use href="#i-NAME">.
+
+const ICONS = {
+  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  cloud: '<path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9.5 3.9 3.9 0 0 1 17 18Z"/><path d="M9 14l2 2 4-4"/>',
+  moonsun: '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/><circle cx="17" cy="6" r="1.6"/>',
+  search: '<circle cx="11" cy="11" r="6"/><path d="m20 20-4.2-4.2"/>',
+  seal: '<path d="M12 3l2.3 1.6 2.8-.2 1 2.6 2.4 1.5-.7 2.7 1.1 2.6-2 2-.2 2.8-2.7.7-1.8 2.2L12 19.6 9.8 21l-1.8-2.2-2.7-.7-.2-2.8-2-2 1.1-2.6-.7-2.7 2.4-1.5 1-2.6 2.8.2Z"/><path d="m8.6 12 2.4 2.4 4.4-4.8"/>',
+  scroll: '<path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 0 2 2H8a2 2 0 0 1-2-2Z"/><path d="M6 4a2 2 0 0 0-2 2v1h2M9 9h7M9 13h7"/>',
+  pad: '<rect x="2.5" y="7" width="19" height="10" rx="5"/><path d="M7 10v4M5 12h4"/><circle cx="15.5" cy="11" r=".8"/><circle cx="18" cy="13" r=".8"/>',
+  book: '<path d="M12 6c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5v-13C17 4 14 4.5 12 6Z"/><path d="M12 6v13"/>',
+  map: '<path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2Z"/><path d="M9 4v14M15 6v14"/>',
+  house: '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+  sword: '<path d="M14.5 5.5L19 5l-.5 4.5L8 20l-4-4Z"/><path d="M6 14l4 4M3.5 20.5l2.5-2.5"/>',
+  skull: '<path d="M12 3a8 8 0 0 0-5 14v3h10v-3a8 8 0 0 0-5-14Z"/><circle cx="9" cy="12" r="1.7"/><circle cx="15" cy="12" r="1.7"/><path d="M10 17v3M14 17v3"/>',
+  crown: '<path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5Z"/>',
+  chest: '<rect x="3" y="10" width="18" height="10" rx="1.5"/><path d="M4 10a8 5 0 0 1 16 0"/><rect x="10.5" y="12" width="3" height="4" rx=".6"/>',
+  key: '<circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/>',
+};
+
+export function injectIconSprite() {
+  const symbols = Object.entries(ICONS)
+    .map(([name, paths]) => `<symbol id="i-${name}" viewBox="0 0 24 24">${paths}</symbol>`)
+    .join('');
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML =
+    `<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0" aria-hidden="true">${symbols}</svg>`;
+  document.body.insertBefore(wrapper.firstChild, document.body.firstChild);
+}

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pages, pageHtml } from '../lib/guideData';
+export function getStaticPaths() {
+  return pages.map((p) => ({ params: { id: p.id }, props: { title: p.title } }));
+}
+const { id } = Astro.params;
+const { title } = Astro.props;
+---
+<BaseLayout id={id!} title={`${title} · Dark Cloud Chronicle`} html={pageHtml(id!)} />

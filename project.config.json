@@ -1,0 +1,9 @@
+{
+  "game": "Dark Cloud",
+  "slug": "dark-cloud-guide",
+  "site": "https://ronwindy.github.io",
+  "base": "/dark-cloud-guide",
+  "pageTitleSuffix": "Dark Cloud Chronicle",
+  "defaultTitle": "Dark Cloud Chronicle",
+  "defaultDescription": "A readable, reformatted copy of the unofficial Dark Cloud strategy guide by AdrenalineSL & Azaroth (v2.0, 2002)."
+}
