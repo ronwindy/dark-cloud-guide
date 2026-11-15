@@ -40,13 +40,6 @@ export function neighbours(id: string): { prev?: PageEntry; next?: PageEntry } {
 // Resolved from the project root (import.meta.url points into dist/ during build).
 const dir = join(process.cwd(), 'src', 'data');
 
-/** Article body HTML of a page fragment (inside <article class="prose">). */
-export function articleHtml(id: string): string {
-  const html = readFileSync(join(dir, 'pages', `${id}.html`), 'utf8');
-  const m = /<article class="prose">([\s\S]*)<\/article>/.exec(html);
-  if (!m) throw new Error(`No article in ${id}.html`);
-  return m[1];
-}
 export function homeHtml(): string {
   return readFileSync(join(dir, 'home.html'), 'utf8');
 }

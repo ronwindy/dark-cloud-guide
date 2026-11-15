@@ -1,0 +1,7 @@
+---
+// Boxed aside: a reader-submitted tip or a chapter's boss fight.
+interface Props { kind: 'tip' | 'boss'; label?: string }
+const { kind, label = kind === 'tip' ? 'Reader tip' : 'Boss fight' } = Astro.props;
+const icon = kind === 'tip' ? 'scroll' : 'skull';
+---
+<aside class={`callout ${kind}`}><div class="ct"><svg class="ic"><use href={`#i-${icon}`}/></svg>{label}</div><slot /></aside>

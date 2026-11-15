@@ -1,0 +1,7 @@
+---
+// Framed ASCII map or diagram with zoom buttons. Use with is:raw so the art is kept verbatim:
+// <MapFrame label="Diagram" small is:raw>...</MapFrame>
+interface Props { label?: string; small?: boolean }
+const { label = 'ASCII map', small = false } = Astro.props;
+---
+<figure class:list={['mapframe', { small }]}><div class="mapbar"><span>{label}</span></div><div class="mapscroll"><pre class="ascii"><slot /></pre></div></figure>

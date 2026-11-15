@@ -1,0 +1,6 @@
+---
+// Guide table; the slot holds <thead>/<tbody>. `sortable` makes header cells click-to-sort.
+interface Props { sortable?: boolean }
+const { sortable = false } = Astro.props;
+---
+<div class="tablewrap"><table class:list={['dctable', { sortable }]}><slot /></table></div>
