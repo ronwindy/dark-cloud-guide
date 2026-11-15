@@ -241,6 +241,55 @@
   #close-mobile-drawer { padding: 0.75rem; }
 }
 
+/* Page top bar: quiet etched ribbon, "Contents ✦ Group". Two fading gold hairlines around a soft
+   violet band; deliberately dimmer than the header and the page title. */
+.crumb-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.crumb-line {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(230, 200, 114, 0.5), rgba(230, 200, 114, 0.12) 70%, rgba(230, 200, 114, 0));
+}
+.crumb-line-low {
+  background: linear-gradient(90deg, rgba(230, 200, 114, 0.22), rgba(230, 200, 114, 0.06) 60%, rgba(230, 200, 114, 0));
+}
+nav.crumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.125rem;
+  padding: 0 0.875rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
+  color: #bdb6dc;
+  background: linear-gradient(90deg, rgba(83, 56, 160, 0.22), rgba(83, 56, 160, 0.04));
+}
+nav.crumb-nav a.crumb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+  padding: 0.2rem 0.7rem 0.2rem 0.5rem;
+  border: 1px solid rgba(230, 200, 114, 0.32);
+  border-radius: 999px;
+  background: rgba(13, 10, 31, 0.45);
+  color: #cdc3f0;
+  font-family: Cinzel, 'Trajan Pro', Georgia, serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+nav.crumb-nav a.crumb-chip:hover { color: #f6e7b4; border-color: rgba(230, 200, 114, 0.6); }
+.crumb-icon { color: #c49e45; }
+.crumb-spark { color: #96742c; flex-shrink: 0; }
+@media (pointer: coarse) {
+  nav.crumb-nav a.crumb-chip { min-height: 2.75rem; padding: 0 0.9rem 0 0.7rem; }
+}
+
 /* Home page "Continue reading" button. */
 .progress-resume {
   display: inline-block;
