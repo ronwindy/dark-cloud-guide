@@ -1,0 +1,377 @@
+---
+// Readability layer for a guide page: sentence lines, highlighted terms, collapsible panels,
+// the "Reading aids" toolbar and the route strip. All markup is built at runtime (src/lib/reader/),
+// so its styles are global. GuidePage renders this unless the page sets reader={false}.
+---
+<script>
+  import { initReader } from '../lib/reader/index.js';
+  initReader();
+</script>
+
+<style is:global>
+/* ===== readability layer ===== */
+.rbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 0.7rem;
+  font-family: var(--f-head);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.rbar .rlabel {
+  margin-right: auto;
+}
+.rbar button {
+  font: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  background: var(--paper3);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 0.18rem 0.85rem;
+  cursor: pointer;
+}
+.rbar button:hover {
+  border-color: var(--accent);
+}
+.rbar button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff6e0;
+  border-color: var(--accent);
+}
+/* short lines */
+.prose .lined {
+  margin: 1em 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--line);
+}
+.prose .ln {
+  display: block;
+  margin: 0.4em 0;
+}
+.prose .lined .ln.act {
+  position: relative;
+  padding-left: 1.3rem;
+}
+.prose .lined .ln.act::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 0.6em;
+  width: 0.5rem;
+  height: 0.5rem;
+  transform: rotate(45deg);
+  background: var(--gold);
+  border-radius: 1px;
+}
+/* bold key terms */
+.prose b.kt {
+  font-weight: 700;
+  color: var(--ink);
+  background: linear-gradient(transparent 60%, rgba(184, 134, 43, 0.34) 60%);
+  padding: 0 0.06em;
+  border-radius: 2px;
+}
+.prose b.nm {
+  font-weight: 700;
+  color: var(--accent);
+}
+.prose b.num {
+  font-weight: 700;
+  background: rgba(140, 47, 35, 0.11);
+  border-radius: 4px;
+  padding: 0 0.22em;
+}
+:root[data-theme="dark"] .prose b.kt {
+  background: linear-gradient(transparent 60%, rgba(230, 184, 90, 0.28) 60%);
+}
+:root[data-theme="dark"] .prose b.num {
+  background: rgba(224, 119, 94, 0.18);
+}
+/* note / warning / hint */
+.prose p.note,
+.prose p.warn,
+.prose p.hint {
+  border: 1px solid var(--line);
+  border-left-width: 6px;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  margin: 1.1rem 0;
+}
+.prose p.note {
+  background: rgba(74, 110, 140, 0.11);
+  border-left-color: #4a6e8c;
+}
+.prose p.warn {
+  background: rgba(140, 47, 35, 0.11);
+  border-left-color: var(--accent);
+}
+.prose p.hint {
+  background: rgba(184, 134, 43, 0.13);
+  border-left-color: var(--gold);
+}
+/* collapsible panels */
+.panel {
+  margin: 0.8rem 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+:root[data-theme="dark"] .panel {
+  background: rgba(255, 255, 255, 0.03);
+}
+.panel > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.35rem 0.8rem;
+  border-radius: 10px;
+  user-select: none;
+}
+.panel > summary::-webkit-details-marker {
+  display: none;
+}
+.panel > summary::before {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg);
+  transition: transform 0.15s;
+  margin: 0 0.2rem 0 0.1rem;
+}
+.panel[open] > summary::before {
+  transform: rotate(45deg);
+}
+.panel > summary:hover {
+  background: var(--paper2);
+}
+.panel[open] > summary {
+  border-bottom: 1px solid var(--line);
+  border-radius: 10px 10px 0 0;
+}
+.prose .panel > summary > h2,
+.prose .panel > summary > h3,
+.prose .panel > summary > h4,
+.prose .panel > summary > p.faq-q {
+  margin: 0 !important;
+  padding: 0.1rem 0;
+  border: 0;
+  flex: 1;
+  min-width: 0;
+  background: none;
+}
+.prose .panel > summary > h2::before {
+  content: none;
+}
+.prose .panel > summary > h2 {
+  font-size: 1.3rem;
+}
+.prose .panel > summary > h2.chapter {
+  font-size: 1.45rem;
+  text-align: center;
+}
+.prose .panel > summary > h4 {
+  font-size: 1.05rem;
+}
+.panel > .pbody {
+  padding: 0.2rem 1rem 0.7rem;
+}
+.panel .panel {
+  margin: 0.7rem 0;
+}
+.panel.lv2 {
+  border-left: 5px solid var(--accent);
+}
+.panel.lv3 {
+  border-left: 4px solid var(--gold);
+}
+.panel.faq > .pbody {
+  padding-top: 0.4rem;
+}
+.panel.faq .faq-a {
+  border-left: 0;
+  padding-left: 0;
+}
+.chips {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.chip2 {
+  font-family: var(--f-head);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  padding: 0.05rem 0.55rem;
+  border-radius: 99px;
+  border: 1px solid var(--gold);
+  color: var(--ink2);
+  background: rgba(184, 134, 43, 0.13);
+  white-space: nowrap;
+}
+.chip2.zone {
+  border-color: var(--accent);
+  background: rgba(140, 47, 35, 0.12);
+}
+.chip2.boss {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff6e0;
+}
+/* reader submissions inside callouts */
+.callout .sub {
+  background: var(--paper3);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.1rem 0.9rem 0.5rem;
+  margin: 0.7rem 0;
+}
+:root[data-theme="dark"] .callout .sub {
+  background: var(--paper2);
+}
+.callout .sub .by {
+  border-top: 1px dashed var(--line);
+  padding-top: 0.35rem;
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+}
+/* route stepper */
+.route {
+  position: sticky;
+  top: 54px;
+  z-index: 12;
+  margin: 0 0 0.8rem;
+  background: var(--paper3);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px var(--shadow);
+}
+:root[data-theme="dark"] .route {
+  background: var(--paper2);
+}
+.route .track {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding: 0.5rem 0.5rem 0.35rem;
+  scrollbar-width: thin;
+}
+.route a.st {
+  flex: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.22rem;
+  min-width: 2.8rem;
+  padding: 0 0.35rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-family: var(--f-head);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+.route a.st span {
+  max-width: 7.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.route a.st i {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 2px solid var(--muted);
+  background: var(--paper3);
+  position: relative;
+  z-index: 1;
+}
+.route a.st.big i {
+  width: 1rem;
+  height: 1rem;
+  border-color: var(--gold);
+  transform: rotate(45deg);
+  border-radius: 3px;
+}
+.route a.st.big {
+  color: var(--ink2);
+  font-weight: 700;
+}
+.route a.st::before,
+.route a.st::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  height: 2px;
+  width: 50%;
+  background: var(--line);
+}
+.route a.st::before {
+  left: 0;
+}
+.route a.st::after {
+  right: 0;
+}
+.route a.st:first-child::before,
+.route a.st:last-child::after {
+  display: none;
+}
+.route a.st.done i {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.route a.st.done::before,
+.route a.st.done::after,
+.route a.st.on::before {
+  background: var(--accent);
+}
+.route a.st.on {
+  color: var(--accent);
+  font-weight: 700;
+}
+.route a.st.on i {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(140, 47, 35, 0.22);
+}
+.route a.st:hover {
+  color: var(--accent);
+}
+@media (max-width: 640px) {
+  .panel > .pbody {
+    padding: 0.2rem 0.7rem 0.6rem;
+  }
+  .prose .lined {
+    padding-left: 0.7rem;
+  }
+  .route {
+    top: 52px;
+  }
+  .prose .panel > summary > h2.chapter {
+    font-size: 1.2rem;
+  }
+}
+@media print {
+  .rbar,
+  .route {
+    display: none;
+  }
+  .panel > summary::before {
+    display: none;
+  }
+}
+</style>

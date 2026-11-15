@@ -1,7 +1,7 @@
 // Collapsible panels: every heading (and every FAQ question) becomes a <details> wrapping its section.
 import { NUMBER_WORD_VALUES, ATLA_COUNT_PATTERN } from './vocab.js';
 import { makeEl, markAdded } from './dom.js';
-import { getJSON, setJSON } from '../storage.js';
+import { getJSON, setJSON } from '../client/storage.js';
 
 const MIN_HEADINGS_FOR_PANELS = 3;
 const FAQ_LEVEL = 5;

@@ -10,3 +10,12 @@ import { groups } from '../lib/guideData';
 <div class="gridgroups">{groups.map((g) => <GroupCard group={g} />)}</div>
 <CreditFooter>Guide text by AdrenalineSL &amp; Azaroth (Version 2.0, August 14, 2002) via GameFAQs. ASCII art and maps kept verbatim. Illustrations are original.</CreditFooter>
 </BaseLayout>
+
+<style>
+.gridgroups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1.8rem 0;
+}
+</style>

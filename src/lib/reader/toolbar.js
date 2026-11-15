@@ -1,6 +1,6 @@
 // "Reading aids" toolbar: collapse / expand all panels and switch back to the original layout.
 import { markAdded } from './dom.js';
-import { KEYS, getItem, setItem } from '../storage.js';
+import { KEYS, getItem, setItem } from '../client/storage.js';
 import { setAllPanelsOpen } from './panels.js';
 
 function toolbarHtml(hasPanels) {

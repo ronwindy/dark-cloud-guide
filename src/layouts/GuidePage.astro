@@ -3,6 +3,7 @@
 import BaseLayout from './BaseLayout.astro';
 import PageHead from '../components/PageHead.astro';
 import FilterBar from '../components/FilterBar.astro';
+import ReaderLayer from '../components/ReaderLayer.astro';
 import Pager from '../components/Pager.astro';
 import CreditFooter from '../components/CreditFooter.astro';
 import { getPage } from '../lib/guideData';
@@ -16,5 +17,27 @@ const { id, reader = true } = Astro.props;
 const page = getPage(id);
 ---
 <BaseLayout id={id} title={`${page.title} · Dark Cloud Chronicle`}>
-  <PageHead page={page} />{page.filter && <FilterBar />}<article class="prose"><slot /></article><Pager id={id} /><CreditFooter />
+  <PageHead page={page} />{page.filter && <FilterBar />}<article class="prose"><slot /></article>{reader && <ReaderLayer />}<Pager id={id} /><CreditFooter />
+  <script>
+    // Remember this page as "last read" and its scroll position; restore the position on return.
+    import { currentId } from '../lib/client/guide.js';
+    import { KEYS, getJSON, setItem, setJSON } from '../lib/client/storage.js';
+  
+    const SAVE_DELAY_MS = 250;
+    const RESTORE_DELAY_MS = 60;
+  
+    setItem(KEYS.last, currentId);
+    const positions = getJSON(KEYS.scrollPositions, {});
+    const y = positions[currentId];
+    if (y && !location.hash) setTimeout(() => window.scrollTo(0, y), RESTORE_DELAY_MS);
+  
+    let saveTimer: ReturnType<typeof setTimeout> | undefined;
+    window.addEventListener('scroll', () => {
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(() => {
+        positions[currentId] = Math.round(window.scrollY);
+        setJSON(KEYS.scrollPositions, positions);
+      }, SAVE_DELAY_MS);
+    }, { passive: true });
+  </script>
 </BaseLayout>

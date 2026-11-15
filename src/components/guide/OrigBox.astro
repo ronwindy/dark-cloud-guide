@@ -2,3 +2,24 @@
 // Collapsed "Show original ASCII" box under a converted table. Use with is:raw: <OrigBox is:raw>...</OrigBox>
 ---
 <details class="origbox"><summary>Show original ASCII</summary><pre class="ascii orig"><slot /></pre></details>
+
+<style>
+.origbox {
+  margin: 0.6rem 0;
+}
+.origbox summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-family: var(--f-head);
+  letter-spacing: 0.08em;
+}
+.origbox pre {
+  margin-top: 0.4rem;
+  padding: 0.7rem;
+  border: 1px dashed var(--line);
+  background: var(--code-bg);
+  overflow: auto;
+  max-height: 60vh;
+}
+</style>

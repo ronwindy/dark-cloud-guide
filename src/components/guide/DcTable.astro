@@ -4,3 +4,90 @@ interface Props { sortable?: boolean }
 const { sortable = false } = Astro.props;
 ---
 <div class="tablewrap"><table class:list={['dctable', { sortable }]}><slot /></table></div>
+
+<script>
+  // Click a header cell of a sortable table to sort by that column (numeric when both values are numbers).
+  const NUMERIC_TEXT = /^[\d.\s-]+$/;
+
+  function compareCells(a: HTMLTableRowElement, b: HTMLTableRowElement, column: number) {
+    const x = a.cells[column].textContent!.trim();
+    const y = b.cells[column].textContent!.trim();
+    const nx = parseFloat(x);
+    const ny = parseFloat(y);
+    const numeric = !isNaN(nx) && !isNaN(ny) && NUMERIC_TEXT.test(x + y);
+    return numeric ? nx - ny : x.localeCompare(y, undefined, { numeric: true });
+  }
+
+  document.querySelectorAll<HTMLTableElement>('table.sortable').forEach((table) => {
+    const headers = [...table.querySelectorAll('th')];
+    headers.forEach((th, column) => {
+      th.addEventListener('click', () => {
+        const ascending = !th.classList.contains('asc');
+        headers.forEach((h) => h.classList.remove('asc', 'desc'));
+        th.classList.add(ascending ? 'asc' : 'desc');
+        const body = table.tBodies[0];
+        const rows = [...body.rows].sort((a, b) => (ascending ? 1 : -1) * compareCells(a, b, column));
+        rows.forEach((row) => {
+          row.classList.remove('sep');
+          body.appendChild(row);
+        });
+      });
+    });
+  });
+</script>
+
+<style is:global>
+/* tables */
+.tablewrap {
+  overflow: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.dctable {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95rem;
+}
+.dctable th {
+  position: sticky;
+  top: 0;
+  background: var(--paper2);
+  font-family: var(--f-head);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  border-bottom: 2px solid var(--gold);
+  white-space: nowrap;
+}
+.dctable.sortable th {
+  cursor: pointer;
+}
+.dctable.sortable th:hover {
+  color: var(--accent);
+}
+.dctable th.asc::after {
+  content: " ▲";
+  font-size: 0.7em;
+}
+.dctable th.desc::after {
+  content: " ▼";
+  font-size: 0.7em;
+}
+.dctable td {
+  padding: 0.38rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.dctable tr:nth-child(even) td {
+  background: rgba(184, 134, 43, 0.06);
+}
+.dctable tr.sep td {
+  border-top: 2px solid var(--gold);
+}
+.dctable tr:hover td {
+  background: rgba(140, 47, 35, 0.08);
+}
+</style>

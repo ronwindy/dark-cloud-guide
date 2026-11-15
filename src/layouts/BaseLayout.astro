@@ -1,10 +1,11 @@
 ---
 import '../styles/global.css';
-import { pages, groups } from '../lib/guideData';
+import IconSprite from '../components/IconSprite.astro';
+import Topbar from '../components/Topbar.astro';
+import Sidebar from '../components/Sidebar.astro';
+import KeyboardShortcuts from '../components/KeyboardShortcuts.astro';
 interface Props { id: string; title: string; mainClass?: string }
 const { id, title, mainClass = 'page' } = Astro.props;
-const manifestJs =
-  'window.DC_PAGES=' + JSON.stringify(pages) + ';window.DC_GROUPS=' + JSON.stringify(groups) + ';';
 const themeJs = "try{var t=localStorage.getItem('dc_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}";
 ---
 <!doctype html>
@@ -19,15 +20,10 @@ const themeJs = "try{var t=localStorage.getItem('dc_theme');if(t)document.docume
   <script is:inline set:html={themeJs}></script>
 </head>
 <body class="">
-  <header class="topbar">
-    <button class="iconbtn" id="menuBtn" aria-label="Menu" title="Menu (m)"><svg class="ic"><use href="#i-menu"></use></svg></button>
-    <a class="brand" href="index.html"><svg class="ic"><use href="#i-cloud"></use></svg><span>Dark Cloud Chronicle</span></a>
-    <div class="tools"><button class="iconbtn" id="themeBtn" title="Day / night parchment (t)"><svg class="ic"><use href="#i-moonsun"></use></svg></button></div>
-  </header>
-  <div class="shade" id="shade"></div>
-  <aside class="side" id="side"><nav id="nav" aria-label="Guide contents"></nav></aside>
+  <IconSprite />
+  <Topbar />
+  <Sidebar currentId={id} />
   <main class={mainClass} id="main"><slot /></main>
-  <script is:inline set:html={manifestJs}></script>
-  <script>import '../scripts/main.js';</script>
+  <KeyboardShortcuts />
 </body>
 </html>

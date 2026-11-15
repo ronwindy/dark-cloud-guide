@@ -4,3 +4,9 @@ interface Props { id: string; title: string; name?: string }
 const { id, title, name = title.toLowerCase() } = Astro.props;
 ---
 <section class="entry" data-name={name}><h3 id={id}>{title}</h3><slot /></section>
+
+<style>
+.entry {
+  padding-bottom: 0.2rem;
+}
+</style>

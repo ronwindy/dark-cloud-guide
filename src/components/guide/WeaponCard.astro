@@ -25,3 +25,55 @@ const chips = (cell: string | string[]) => (Array.isArray(cell) ? cell : [cell])
     )}</tr>
   ))}</table>
 )}</div>
+
+<style>
+.wcard {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  background: var(--paper);
+  box-shadow: 0 2px 6px var(--shadow);
+}
+.wcard h5 {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.25rem;
+}
+.wcard h5 em {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: var(--f-body);
+}
+.wcard.approx h5::after {
+  content: " ≈";
+  color: var(--muted);
+  font-weight: 400;
+}
+.wstat {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.wstat td {
+  padding: 0.12rem 0.15rem;
+  vertical-align: top;
+}
+.wstat td.wnote {
+  font-style: italic;
+  color: var(--ink2);
+  padding: 0.25rem 0;
+}
+.chip {
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  background: var(--paper3);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 0 0.35rem;
+  margin: 1px 2px 1px 0;
+  white-space: nowrap;
+}
+</style>

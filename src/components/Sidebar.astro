@@ -1,0 +1,207 @@
+---
+// Sidebar: page groups from manifest.json (current group open), read ticks and counts,
+// and the outline of the current page. Read state and the outline are filled in on the client.
+import { pages, groups } from '../lib/guideData';
+interface Props { currentId: string }
+const { currentId } = Astro.props;
+const currentGroup = pages.find((p) => p.id === currentId)?.group;
+---
+<div class="shade" id="shade"></div>
+<aside class="side" id="side"><nav id="nav" aria-label="Guide contents"><a class="pl" href="index.html" style="padding-left:.5rem;font-family:var(--f-head)"><svg class="ic"><use href="#i-cloud"/></svg>Home &amp; progress</a>{groups.map((g) => {
+  const groupPages = pages.filter((p) => p.group === g.id);
+  return (
+    <details open={g.id === currentGroup}><summary><svg class="ic"><use href={`#i-${g.icon}`}/></svg>{g.title}<span class="cnt">0/{groupPages.length}</span></summary>{groupPages.map((p) => (
+      <><a class:list={['pl', { cur: p.id === currentId }]} href={p.file} data-id={p.id}><span class="tick"></span><span>{p.title}</span></a>{p.id === currentId && <div class="outline" id="outline"></div>}</>
+    ))}</details>
+  );
+})}</nav></aside>
+
+<script>
+  import { isRead, READ_CHANGE_EVENT } from '../lib/client/readState.js';
+  import { toggleMenu } from '../lib/client/menu.js';
+
+  const OUTLINE_MAX_ITEMS = 60;
+  const WIDE_LAYOUT_MIN_WIDTH = 1180; // sidebar is always visible at this width, so don't auto-close it
+  const SPY_OFFSET_PX = 120; // a heading counts as "current" once it scrolls above this line
+
+  const nav = document.getElementById('nav')!;
+
+  /** Read ticks on page links and "read / total" per group. */
+  function paintReadState() {
+    nav.querySelectorAll('details').forEach((group) => {
+      const links = [...group.querySelectorAll<HTMLElement>('.pl[data-id]')];
+      links.forEach((a) => a.classList.toggle('read', isRead(a.dataset.id!)));
+      const count = group.querySelector('.cnt');
+      if (count) count.textContent = `${links.filter((a) => a.classList.contains('read')).length}/${links.length}`;
+    });
+  }
+
+  /** Fill the placeholder under the current page with links to its headings. */
+  function fillOutline(outline: HTMLElement) {
+    const headings = [...document.querySelectorAll<HTMLElement>('.prose h2,.prose h3,.prose h4:not(.tier)')]
+      .filter((h) => h.id)
+      .slice(0, OUTLINE_MAX_ITEMS);
+    const levelClass: Record<string, string> = { H2: 'l2', H3: 'l3', H4: 'l4' };
+    outline.innerHTML = headings
+      .map((h) => `<a class="${levelClass[h.tagName]}" href="#${h.id}">${h.textContent}</a>`)
+      .join('');
+    outline.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).tagName === 'A' && window.innerWidth < WIDE_LAYOUT_MIN_WIDTH) toggleMenu(false);
+    });
+  }
+
+  /** Highlight the outline link of the heading currently at the top of the screen. */
+  function updateScrollSpy(outline: HTMLElement) {
+    let activeId: string | null = null;
+    document.querySelectorAll('.prose h2[id],.prose h3[id],.prose h4[id]:not(.tier)').forEach((h) => {
+      if (h.getBoundingClientRect().top < SPY_OFFSET_PX) activeId = h.id;
+    });
+    outline.querySelectorAll('a').forEach((a) => {
+      a.classList.toggle('on', a.getAttribute('href') === `#${activeId}`);
+    });
+  }
+
+  paintReadState();
+  document.addEventListener(READ_CHANGE_EVENT, paintReadState);
+  document.getElementById('shade')?.addEventListener('click', () => toggleMenu(false));
+
+  const outline = document.getElementById('outline');
+  if (outline) {
+    fillOutline(outline);
+    window.addEventListener('scroll', () => updateScrollSpy(outline), { passive: true });
+  }
+  nav.querySelector('.pl.cur')?.scrollIntoView?.({ block: 'center' });
+</script>
+
+<style is:global>
+/* sidebar */
+.side {
+  position: fixed;
+  z-index: 25;
+  top: 54px;
+  bottom: 0;
+  left: 0;
+  width: 330px;
+  max-width: 88vw;
+  background: var(--side);
+  border-right: 2px solid var(--line);
+  overflow: auto;
+  transform: translateX(-100%);
+  transition: transform 0.22s;
+  padding: 0.6rem 0.5rem 3rem;
+  box-shadow: 6px 0 18px var(--shadow);
+}
+body.menu-open .side {
+  transform: none;
+}
+.shade {
+  position: fixed;
+  inset: 54px 0 0 0;
+  background: rgba(20, 10, 0, 0.4);
+  z-index: 20;
+  display: none;
+}
+body.menu-open .shade {
+  display: block;
+}
+#nav details {
+  margin: 0.1rem 0;
+  border-radius: 8px;
+}
+#nav summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--f-head);
+  font-size: 0.86rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--ink2);
+}
+#nav summary::-webkit-details-marker {
+  display: none;
+}
+#nav summary:hover {
+  background: var(--paper2);
+}
+#nav summary .cnt {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+#nav details[open] > summary {
+  color: var(--accent);
+}
+#nav .pl {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.28rem 0.5rem 0.28rem 1.6rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  border-radius: 6px;
+}
+#nav .pl:hover {
+  background: var(--paper2);
+}
+#nav .pl.cur {
+  background: var(--paper3);
+  box-shadow: inset 3px 0 0 var(--accent);
+  font-weight: 600;
+}
+#nav .pl .tick {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--muted);
+  flex: none;
+}
+#nav .pl.read .tick {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+#nav .outline {
+  margin: 0.1rem 0 0.4rem 2.3rem;
+  border-left: 1px dashed var(--line);
+  padding-left: 0.6rem;
+}
+#nav .outline a {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--ink2);
+  text-decoration: none;
+  padding: 0.12rem 0.2rem;
+  line-height: 1.3;
+}
+#nav .outline a:hover,
+#nav .outline a.on {
+  color: var(--accent);
+}
+#nav .outline a.l3 {
+  padding-left: 0.7rem;
+}
+#nav .outline a.l4 {
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+@media (min-width: 1180px) {
+  .side {
+    transform: none;
+    box-shadow: none;
+  }
+  .shade {
+    display: none !important;
+  }
+}
+@media print {
+  .side {
+    display: none;
+  }
+}
+</style>

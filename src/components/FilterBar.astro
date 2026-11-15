@@ -2,3 +2,64 @@
 // Live filter for entries, weapon cards and table rows. Shown on pages with `"filter": true` in manifest.json.
 ---
 <div class="filterbar"><svg class="ic"><use href="#i-search"/></svg><input id="filter" type="search" placeholder="Filter this page…  ( / )" autocomplete="off"><span id="filterCount"></span></div>
+
+<script>
+  // Live text filter for entries, weapon cards and table rows ("/" focuses it, see KeyboardShortcuts).
+  const input = document.getElementById('filter') as HTMLInputElement | null;
+  const counter = document.getElementById('filterCount');
+  if (input && counter) {
+    const items = [...document.querySelectorAll<HTMLElement>('.entry,.wcard,.dctable tbody tr')];
+    input.addEventListener('input', () => {
+      const query = input.value.trim().toLowerCase();
+      let shown = 0;
+      items.forEach((el) => {
+        const match = !query || el.textContent!.toLowerCase().includes(query);
+        el.hidden = !match;
+        if (match) shown++;
+      });
+      counter.textContent = query ? `${shown} / ${items.length} match` : '';
+    });
+  }
+</script>
+
+<style>
+:global(.entry[hidden]),
+:global(.wcard[hidden]),
+:global(.dctable tr[hidden]) {
+  display: none;
+}
+.filterbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--paper3);
+  position: sticky;
+  top: 60px;
+  z-index: 10;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+.filterbar input {
+  flex: 1;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  min-width: 0;
+}
+#filterCount {
+  color: var(--muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+@media print {
+  .filterbar {
+    display: none;
+  }
+}
+</style>

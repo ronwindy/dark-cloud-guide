@@ -1,18 +1,13 @@
 // Readability layer: restructures the layout only, never the wording.
+// Loaded by <ReaderLayer> on pages that do not opt out with <GuidePage reader={false}>.
 // Steps: group submissions -> highlight paragraphs -> collapsible panels -> toolbar -> route strip -> link reveal.
-import { currentId, findPage } from '../guide.js';
+import { currentId, findPage } from '../client/guide.js';
 import { groupSubmissions } from './callouts.js';
 import { improveParagraphs } from './paragraphs.js';
 import { buildPanels, rememberFoldState } from './panels.js';
 import { createToolbar } from './toolbar.js';
 import { createRouteStepper } from './route.js';
 import { initReveal } from './reveal.js';
-
-// Pages with their own special layouts: left untouched.
-const SKIPPED_PAGES = new Set([
-  'wtoan', 'wxiao', 'wgoro', 'wruby', 'wungaga', 'wosmond', 'wevo', 'wflow1', 'wflow2',
-  'items', 'bestiary1', 'bestiary2', 'bestiary3', 'index',
-]);
 
 function enhancePage(prose) {
   const originalHtml = prose.innerHTML;
@@ -53,7 +48,7 @@ function enhancePage(prose) {
 
 export function initReader() {
   const prose = document.querySelector('article.prose');
-  if (!prose || SKIPPED_PAGES.has(currentId)) return;
+  if (!prose) return;
   try {
     enhancePage(prose);
   } catch (err) {

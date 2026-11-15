@@ -8,3 +8,49 @@ const group = getGroup(page.group);
 <header class="pagehead"><Scene name={page.scene} />
 <div class="crumb"><svg class="ic"><use href={`#i-${group.icon}`}/></svg>{group.title}</div>
 <h1>{page.heading ?? page.title}</h1></header>
+
+<style>
+.pagehead {
+  position: relative;
+  margin: 1rem 0 1.2rem;
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px var(--shadow);
+  background: var(--sc-bg);
+}
+.pagehead .crumb {
+  position: absolute;
+  left: 1rem;
+  top: 0.7rem;
+  font-family: var(--f-head);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper3);
+  padding: 0.2rem 0.7rem;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  opacity: 0.95;
+}
+.pagehead h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 1.6rem 1.2rem 0.7rem;
+  font-family: var(--f-disp);
+  font-size: clamp(1.25rem, 3.2vw, 2.15rem);
+  line-height: 1.15;
+  color: var(--ink);
+  background: linear-gradient(transparent, var(--paper3) 80%);
+  text-shadow: 0 1px 0 var(--paper3);
+}
+@media (max-width: 640px) {
+  .pagehead h1 {
+    padding-top: 1rem;
+  }
+}
+</style>
