@@ -1,0 +1,60 @@
+People are skipping ahead of me and I've been getting a lot of demands for a
+Gem and attachment weapon-upgrade-stats thing, so I've decided to make this
+section. Before I thought I could start on working on it, I already get tons
+of helpful e-mails. Thanks to these people, they've saved me about millions
+of hours keeping tracks of these. Thanks everyone. I will add anything if it
+has yet to be mentioned.
+
+
+##########
+Attributes
+##########
+
+Attribute attachments enhance one of the four primary stats by an amount that
+ranges from +1 to +3 and are most often found inside the dungeons. These can
+also be bought in the +1 variety in the town of Queens if you choose the name
+"Freshen Up Watery" when Suzy asks you to suggest a new name for her shop.
+
+##########
+ Elements
+##########
+
+The elemental attachments all give +3 to their respective elements.  These
+attachments are easy to find since Gaffer in the first town will sell all
+five of the elemental attachments if you wait to activate the event at his
+shop until after you have place Paige's House.
+
+##########
+ Busters
+##########
+
+These attachments give +3 to the various Anti-Monster statistics on weapons.
+They are relatively easy to find with some attachments able to be bought in
+the stores of each town and can be also be acquired by using an attack item
+such as a bomb to kill a monster of the appropriate type inside the dungeon,
+they will drop a buster attachment a little over half the time.
+
+##########
+   Gems
+##########
+
+What can you say about these wonderful little attachments other than the fact
+that when used effectively they can do the work of up to 15 other attachments
+at one time (ooh... diamonds... so nice for those anti-monster stats).  These
+can only be found in the back levels of the dungeons or bought by spending
+your fishing points at a cost of 100 per gem.  The effects of the gems can be
+found in the table below.
+
+Amethyst     +10 Ice, +10 Anti-Dragon and Anti-Mage
+Aquamarine   +10 Ice, +10 Anti-Sky and Anti-Marine
+Diamond	 +10 Anti-Metal, +5 vs. All Other Creature Types
+Emerald	 +10 Magic, +10 Anti-Dragon and Anti-Plant
+Garnet       +5 Attack, +10 Fire, +10 Anti-Beast and Anti-Stone
+Opal         +10 Endurance, +10 Anti-Metal and Anti-Mage
+Pearl        +10 Endurance, +10 Thunder, +10 Anti-Undead
+Peridot      +5 Attack, +10 Holy, +10 Anti-Beast and Anti-Plant
+Ruby         +10 Speed, +10 Fire, +10 Anti-Mimic
+Sapphire     +10 Magic, +10 Wind, +10 Anti-Sky
+Topaz        +5 Attack, +10 Speed, +10 Anti-Undead and Anti-Sky
+Turquoise    +10 Ice, +10 Anti-Stone and Anti-Mimic
+Sun          +10 Attack, +10 All Elements, +3 All Anti-Creature Stats

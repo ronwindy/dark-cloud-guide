@@ -1,0 +1,150 @@
+TALL HAMMER
+AT:  260                           TALL HAMMER
+MG:  200                                |
+                                        |
+                                        |
+                         _______________|_______________
+                        |                               |
+                        |                               |
+                  GAIA HAMMER-------             LAST JUDGEMENT
+                        |           |                /
+                        |           |               /
+                 MAGICAL HAMMER-----|--------------/
+                        |           |
+                       /|\          |
+                      / | \         |
+             ________|  |  |_______ |
+            |           |          ||
+      TURTLE SHELL      |      BIG BUCKS
+            |           |
+      FROZEN TUNA       |
+                  PLATE HAMMER
+                        |
+                  STEEL HAMMER
+
+-----------------------------------------------------------------------------
+
+SECRET ARMLET
+AT:  155                          SECRET ARMLET
+MG:  300                                |
+                                        |
+                                        |
+                                 ATHENA'S ARMLET
+                                        |
+                                        |
+                                   GODDESS RING
+                                        |
+                                        |
+                                   CRYSTAL RING
+                                        |
+                                        |
+                                       /|\
+                                      / | \_______
+                                 ____/  |         |
+                                |  THORN ARMLET   |
+                                |          BANDIT'S RING
+                         PLATINUM RING
+
+-----------------------------------------------------------------------------
+
+MOBIUS RING
+AT:   99                           MOBIUS RING
+MG:  250                                |
+                                        |
+                                        |
+                                       / \
+                             _________/   \__________
+                            /                        \
+                           /                          \
+                    SATAN'S RING                DESTRUCTION RING
+                          |                            |
+                          |                            |
+                    CRYSTAL RING                  FAIRY'S RING
+                          |                           /|\
+                          |                          / | \_____
+                         /|\                   _____/  |       \
+                        / | \                 /        |   POCKLEKUL
+                  _____/  |  \_____          /         |        |
+                 /        |        \        /          |        |
+          BANDIT'S RING   |    PLATINUM RING           |  BANDIT'S RING
+                          |                            |
+                    THORN ARMLET-----------------------
+
+-----------------------------------------------------------------------------
+
+BABEL'S SPEAR
+AT:  321                           BABELS' SPEAR
+MG:   80                                 |
+                                         |
+                                         |
+                                    TERRA SWORD
+                                         |
+                                         |
+                                        / \
+                              _________/   \________
+                             /                      \
+                         CACTUS                   MIRAGE
+                          / | \                      |
+                         /  |  \____                 |
+                   _____/   |       \                |
+                  /         |   SCORPION ------------
+             DESANGA   PARTISAN     |\
+                 |          |\      | \
+                 |__________| \     |  \_____
+                      |        \    |        \
+                  JAVELIN      |   /       HALBERD
+                         5 FOOT NAIL
+
+-----------------------------------------------------------------------------
+
+HERCULES' WRATH
+AT:  256                          HERCULES' WRATH
+MG:   50                                 |
+                                         |
+                                         |
+                                      MIRAGE
+                                         |
+                                         |
+                                     SCORPION
+                                        / \
+                                       /   \
+                                 _____/     \_____
+                                /                 \
+                            HALBERD           5 FOOT NAIL
+
+-----------------------------------------------------------------------------
+
+SUPERNOVA
+AT:  256                          SUPERNOVA
+MG:  128                              |
+                                      |
+                                      |
+                                 HEXA BLASTER
+                                      |
+                                      |
+                                     / \
+                              ______/   \______
+                             /                 \
+                          SNAIL              SKUNK
+                             |                 |
+                             |                 |
+                              ------------BLESSING GUN
+                                               |
+                                            JACKAL
+
+-----------------------------------------------------------------------------
+
+STAR BREAKER
+AT:  120                          STAR BREAKER
+MG:   45                                |
+                                        |
+                                        |
+                                   G CRUSHER
+                                        |
+                                        |
+                                     SWALLOW
+                                        |
+                                        |
+                                     JACKAL
+
+-----------------------------------------------------------------------------

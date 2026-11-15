@@ -1,0 +1,84 @@
+---
+import { Menu } from '@lucide/astro';
+import project from '../../project.config.json';
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<header class="mobile-header lg:hidden sticky top-0 z-40">
+  <div class="mobile-header__bar relative h-14 sm:h-16 flex items-center justify-between">
+    <!-- Left: Hamburger Drawer Trigger -->
+    <button
+      id="open-mobile-drawer"
+      data-open-drawer
+      class="mobile-header__menu p-2.5 -ml-2.5 rounded-lg text-slate-200 hover:text-moon-300 transition-colors focus:outline-none focus:ring-1 focus:ring-moon-500"
+      aria-label="Open chapters and navigation menu"
+    >
+      <Menu class="w-6 h-6" />
+    </button>
+
+    <!-- Right: Brand Logo -->
+    <a href={`${baseUrl}/`} class="flex items-center group py-1">
+      <img
+        src={`${baseUrl}/logo.png`}
+        alt={project.defaultTitle}
+        class="mobile-header__logo h-10 sm:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+      />
+    </a>
+  </div>
+
+  <!-- Gold divider with centre ornament -->
+  <div class="mobile-header__divider" aria-hidden="true"><span></span></div>
+</header>
+
+<style>
+  .mobile-header {
+    position: sticky;
+    transition: transform 0.25s ease;
+    padding-top: env(safe-area-inset-top);
+    overflow: hidden;
+    /* dark scrim on top so the logo reads cleanly, over an indigo-violet wash */
+    background:
+      linear-gradient(180deg, rgba(5, 3, 14, 0.8) 0%, rgba(5, 3, 14, 0.55) 55%, rgba(5, 3, 14, 0.25) 100%),
+      radial-gradient(90% 160% at 0% 0%, rgba(109, 79, 194, 0.32) 0%, rgba(109, 79, 194, 0) 60%),
+      linear-gradient(180deg, #1b1442 0%, #130e30 55%, #0b0919 100%);
+    box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  :global(html[data-header-hidden]) .mobile-header { transform: translateY(-100%); }
+  .mobile-header__bar {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+  @media (prefers-reduced-motion: reduce) { .mobile-header { transition: none; } }
+
+  .mobile-header__logo {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
+  }
+
+  .mobile-header__menu {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(196, 158, 69, 0.35);
+  }
+  .mobile-header__menu:hover {
+    background: rgba(196, 158, 69, 0.14);
+  }
+
+  .mobile-header__divider {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #96742c 20%, #e6c872 50%, #96742c 80%, transparent 100%);
+  }
+  /* centre ornament: a small gold diamond */
+  .mobile-header__divider span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #0d0a1f;
+    border: 1.5px solid #e6c872;
+    box-shadow: 0 0 6px rgba(230, 200, 114, 0.55);
+  }
+</style>

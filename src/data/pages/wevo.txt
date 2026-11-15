@@ -1,0 +1,242 @@
+Basically, each weapon undergoes five or less evolutions. Naturally, as each
+Weapon goes through each stage, it should become more powerful. Depending on
+what you attach to it(be it gems and attachments), it may take on a different
+and a nicer form, not to mention easier to kick butt with.
+
+Sometimes you may find already evolved weapons in chests. With these prepared
+weapons, you can help evolve them even further into their final form. You can
+follow the original chart above for better comprehension. My only tip to you
+when developing your weapon power, you should find ALL of the Gems and other
+Attachments. I don't care how you do it; you don't need to tell me which body
+part you're willing to trade for gems, just get them.
+
+The tables below will list the evolution paths for each weapon and I'll try
+to put them in order from the slowest upgrade paths to the fastest.  I will
+also break off any redundant steps into a single line to save space, you'll
+see what I mean when you look at the lists.
+
+
+ T  O  A  N
+************
+Default Weapon: Dagger
+
+NOTE:  Weapons with astericks(*) around them can be evolved into another form
+and are included at the bottom of the weapon list due to lack of space and a
+desire to keep the table as eye pleasing and legible as possible.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ BASE WEAPON      |                      EVOLUTION PATH                     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Kitchen Knife    |     Chopper      |      Choora      | *Heaven's Cloud*  |
+ Kitchen Knife    |     Chopper      |      Choora      |    *Maneater*     |
+ Kitchen Knife    |     Chopper      |      Dusack      | *7 Branch Sword*  |
+ Kitchen Knife    |     Chopper      |      Dusack      |   *Brave Ark*     |
+ Kitchen Knife    |       Sax        |      Dusack      | *7 Branch Sword*  |
+ Kitchen Knife    |       Sax        |      Dusack      |   *Brave Ark*     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Baselard         |       Sax        |      Dusack      | *7 Branch Sword*  |
+ Baselard         |       Sax        |      Dusack      |   *Brave Ark*     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Gladius          |   Small Sword    |    Tsukikage     | *Heaven's Cloud*  |
+ Gladius          |     Chopper      |      Choora      | *Heaven's Cloud*  |
+ Gladius          |     Chopper      |      Choora      |    *Maneater*     |
+ Gladius          |     Chopper      |      Dusack      | *7 Branch Sword*  |
+ Gladius          |     Chopper      |      Dusack      |   *Brave Ark*     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ CrysKnife        |   Small Sword    |    Tsukikage     | *Heaven's Cloud*  |
+ CrysKnife        |   Sandbreaker    |  Antique Sword   |   *Brave Ark*     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Bone Rapier      |     Evilcise     |  *Drainseeker*   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Shamshir         |      Dusack      | *7 Branch Sword* |
+ Shamshir         |      Dusack      |   *Brave Ark*    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Serpent Sword    |     Evilcise     |  *Drainseeker*   |
+ Serpent Sword    |    Tsukikage     | *Heaven's Cloud* |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Buster Sword     |     Claymore     |   Cross Hinder   |    *Big Bang*     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Macho Sword      |   Aga's Sword    | Atlamillia Sword |  Chronicle Sword  |
+ Macho Sword      |   Cross Hinder   |     Big Bang     |   Sword of Zeus   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Wise Owl Sword   |   Lamb's Sword   | Atlamillia Sword |  Chronicle Sword  |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Maneater         | Atlamillia Sword |  Chronicle Sword |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ 7 Branch Sword   | Atlamillia Sword |  Chronicle Sword |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Heaven's Cloud   |    Dark Cloud    |    7th Heaven    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Brave Ark        |    Dark Cloud    |    7th Heaven    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Drainseeker      |    Dark Cloud    |    7th Heaven    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Sun Sword        |     Big Bang     |  Sword of Zeus   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Big Bang         |  Sword of Zeus   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Mardan Eins      |   Mardan Twei    |   Arise Mardan   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+===================================
+HINT:  Evolving the Chronicle Sword
+===================================
+I've put together the quickest path from the Macho Sword to the Chronicle
+Sword without using any SynthSphere attachments.  Here is a list of the gems
+to attach to efficiently build up each weapon into the next best weapon.
+
+-= Macho Sword =-
+Diamond x6, Peridot x3, Ruby x2, Sapphire x1, Pearl x3
+
+-= Aga's Sword =-
+Garnet x1, Ruby x1, Aquamarine x1, Amethyst x3, Sapphire x3, Pearl x6
+
+-= Atlamillia Sword =-
+Garnet x3, Aquamarine x2, Sapphire x3, Peridot x6
+
+Using the gems outlined above you should be able to build up the Macho Sword
+after four upgrades but should take up one more level to infuse more gems in
+the sword, saving steps later on when building up the Atlamillia Sword.  The
+same applies to the Aga's Sword which will also be able to build up within
+four upgrades but should be taken up another level as well which will allow
+you to build up the Atlamillia Sword after the fifth upgrade, giving you the
+Chronicle Sword in fifteen total upgrades.
+
+
+ X  I  A  O
+************
+Default Weapon: Wooden SlingShot
+
+NOTE:  Weapons with astericks(*) around them can be evolved into another form
+and the rest of their evolution steps are included at the bottom of the table
+due to lack of space and a desire to keep the table as legible as possible.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ BASE WEAPON      |                      EVOLUTION PATH                     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Steel Slingshot  |   Hardshooter    |  Double Impact   | *Divine Beast T*  |
+ Steel Slingshot  |   Hardshooter    |     Matador      | *Divine Beast T*  |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Bone Slingshot   |     Flamingo     |     Dragon Y     | *Divine Beast T*  |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Bandit Slingshot |   Hardshooter    |  Double Impact   | *Divine Beast T*  |
+ Bandit Slingshot |   Hardshooter    |     Matador      | *Divine Beast T*  |
+ Bandit Slingshot |  Double Impact   | *Divine Beast T* |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Steve            |   Super Steve    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Divine Beast T   |  Angel Shooter   |    Angel Gear    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+ G  O  R  O
+************
+Default Weapon: Mallet
+
+NOTE:  Weapons with astericks(*) around them can be evolved into another form
+and the rest of their evolution steps are included at the bottom of the table
+due to lack of space and a desire to keep the table as legible as possible.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ BASE WEAPON      |                      EVOLUTION PATH                     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Steel Hammer     |   Plate Hammer   |  Magical Hammer  |   *Gaia Hammer*   |
+ Steel Hammer     |   Plate Hammer   |  Magical Hammer  | *Last Judgement*  |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Bone Slingshot   |  *Gaia Hammer*   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Big Bucks        |  Magical Hammer  |  *Gaia Hammer*   |
+ Big Bucks        |  Magical Hammer  | *Last Judgement* |
+ Big Bucks        |  *Gaia Hammer*   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Frozen Tuna      |   Turtle Shell   |  Magical Hammer  |   *Gaia Hammer*   |
+ Frozen Tuna      |   Turtle Shell   |  Magical Hammer  |   *Gaia Hammer*   |
+ Frozen Tuna      |   Turtle Shell   |   *Battle Ax*    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Battle Ax        |    Satan's Ax    |     Inferno      |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Gaia Hammer      |   Tall Hammer    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Last Judgement   |   Tall Hammer    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+ R  U  B  Y
+************
+Default Weapon: Gold Ring
+
+NOTE:  Weapons with astericks(*) around them can be evolved into another form
+and the rest of their evolution steps are included at the bottom of the table
+due to lack of space and a desire to keep the table as legible as possible.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ BASE WEAPON      |                      EVOLUTION PATH                     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Platinum Ring    |   Crystal Ring   |   Goddess Ring   | *Athena's Armlet* |
+ Platinum Ring    |   Crystal Ring   |   Satan's Ring   |    Mobius Ring    |
+ Platinum Ring    |   Fairy's Ring   | *Destruction R.* |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Thorn Armlet     |   Crystal Ring   |   Goddess Ring   | *Athena's Armlet* |
+ Thorn Armlet     |   Crystal Ring   |   Satan's Ring   |    Mobius Ring    |
+ Thorn Armlet     |   Fairy's Ring   | *Destruction R.* |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Pocklekul        |   Fairy's Ring   | *Destruction R.* |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Bandit's Ring    |   Crystal Ring   |   Goddess Ring   | *Athena's Armlet* |
+ Bandit's Ring    |   Crystal Ring   |   Satan's Ring   |    Mobius Ring    |
+ Bandit's Ring    |    Pocklekul     |   Fairy's Ring   | *Destruction R.*  |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Athena's Armlet  |  Secret Armlet   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Destruction R.   |   Mobius Ring    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+ U N G A G A
+*************
+Default Weapon: Fighting Stick
+
+NOTE:  Weapons with astericks(*) around them can be evolved into another form
+and the rest of their evolution steps are included at the bottom of the table
+due to lack of space and a desire to keep the table as legible as possible.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ BASE WEAPON      |                      EVOLUTION PATH                     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Javelin          |     Desanga      |      Cactus      |   *Terra Sword*   |
+ Javelin          |     Partisan     |      Cactus      |   *Terra Sword*   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Halberd          |     Scorpion     |      Mirage      |   *Terra Sword*   |
+ Halberd          |     Scorpion     |      Mirage      |  Hercules' Wrath  |
+ Halberd          |     Scorpion     |      Cactus      |   *Terra Sword*   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ 5 Foot Nail      |     Scorpion     |      Mirage      |   *Terra Sword*   |
+ 5 Foot Nail      |     Scorpion     |      Mirage      |  Hercules' Wrath  |
+ 5 Foot Nail      |     Scorpion     |      Cactus      |   *Terra Sword*   |
+ 5 Foot Nail      |     Partisan     |      Cactus      |   *Terra Sword*   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Terra Sword      |  Babel's Spear   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+ O S M O N D
+*************
+Default Weapon: Machine Gun
+
+NOTE:  Weapons with astericks(*) around them can be evolved into another form
+and the rest of their evolution steps are included at the bottom of the table
+due to lack of space and a desire to keep the table as legible as possible.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ BASE WEAPON      |                      EVOLUTION PATH                     |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Jackal           |   Blessing Gun   |       Skunk      |  *Hexa Blaster*   |
+ Jackal           |     Swallow      |     G Crusher    |   Star Breaker    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Snail            |   Blessing Gun   |       Skunk      |  *Hexa Blaster*   |
+ Snail            |   Hexa Blaster   |     Supernova    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Hexa Blaster     |     Supernova    |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

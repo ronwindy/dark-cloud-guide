@@ -1,0 +1,134 @@
+                                """""
+                                 `##;
+  ""'###''.                       '@@
+   `'#@"@,;;           """""".    @#@'  O"""
+    OO   '@#@           `#''''O   @;;   .O;;;
+    OO'   '@"@   ^       OO  'OO  ;;;. O"@@O
+    OO"    "";  ;O       OO    O; O;O OOO     Sony Entertainment of America
+  .´;@`.   @O"';OOO      OO  .OO  OOOoO.@
+   `OO´    OOO ;' 'O     @O´´O"   OOO  OO.             Presents...
+    OO;  `OO. ;OOO'OO    @@ OO   'OOO  "OOO
+    OO. "OO  ;' o  .OO  ."O  OO`. OOO   "OO;
+  @OOOooO   ;"      'OO  O@. OO  ;OOO   "OOO  .
+        ´´'         ;O´```` O;;"OOO    .OO;  ;
+           `". .      ,OO        ´'''`    ''';"           """""##·.
+        ;;;.`.@#@   `.                   .""'..            `##"#··'".
+       @@@;`. @@'    ;@@.               ;; `.`@"     "##"   ##;'  '@@@;
+     @@@@  ´;;;@    ;@"@"                `..` ;@.     .OO'  ##;    '@;;.
+    @@@@   OOO';     .@@@@;      .OOOOO.     ';@;'     ""   @#;     .@@@;
+   """"'  @@O  O       `"O"    .O'´    'O.    @O'      OO   @@"     "&&@#
+  .OOO;    OOO'         OO'   .@@``     @@.   OO;     ;@@   @@O      OOOO"
+ 'OOOOo            .··. OO´  .OO'·  .   'OO.  ""       @@ ·´OOO`·    "@@@.
+  OOO O          .´OOO.`OO..´OOO   @O`   OOO`.OO .     @@  `OOO´     .@OO@"
+  "OOOO         ;OO ´ ``OO··`.OO;  `.´  ;OO.´ OO       @@   @@O      .OOO'
+   OOOO'       ;OO;     O;    .@@       @@.  .@@"      "O   OOO      OOO;
+    OOOO'     .'@;      ';     .O'.   .O"     @@;     .@O   OOO     .OO;
+      OOO"  .´O@@      ""        "OOO"O       .OO.  .';OO'  OOO     OOO
+        OOO"O;O'      "".···..·                 OO,OO'."". .OOO.  .OO.'
+                    .;OOO`.`OO´                           .;OOOOOOO@" ™
+
+                                      for
+                                 Playstation®2
+
+               The Ultimate Unofficial Dark Cloud Strategy Guide
+                           Written by AdrenalineSL &
+                                    Azaroth
+                     Version 2.0: Released August 14, 2002
+                         Visit: http://www.azaroth.com
+
+
+         The very latest versions and updates can be found at GameFAQs:
+                            http://www.gamefaqs.com
+
+
+_____________________________________________________________________________
+
+This is currently [Version 2.0] of Adrenaline's and Azaroth's Dark Cloud
+Walkthrough and Strategy Guide.
+
+
+THIS COMPLETE DARK CLOUD FAQ/WALKTHROUGH EXPLICITLY INCLUDES:
+
+* Complete know-it-all basics section for dummies
+* A full walkthrough that can lead you from point A to Z
+* Georama help when you are stumped with that 89%
+* Help on how to fulfill requests of all the villagers and getting 100% in
+  all categories
+* Story and character information
+* Everything, and I mean everything about weapons
+* Weapon stats, weapon abilities, you name it
+* Complete Bestiary with battle strategies
+* Complete Item lists and their uses
+* "Fool-proof" boss strategies for all bosses
+* Extra random stuff about Dark Cloud
+
+COME BUY IT NOW! Available at  most retail  stores that sell  wads of printed
+guides from the internet. Suckers. I will hunt you down and kill you 'til you
+die.
+
+
+--------------------
+---  WHAT'S NEW  ---
+--------------------
+
+Version 2.0  | August 14, 2002
+After some contemplation, I just don't want to add my *NEW* e-mail address in
+this guide. All the help I can offer is found here. If you can't get the help
+you need, then consult the message board, PLEASE! No need to try my old addy.
+I don't use it anymore. Well, hardly. For those of you that have endlessly
+tried to contact Azaroth--he hasn't been online for months!! Anyway, I just
+kinda fiddled around with the format. I didn't add anything, but I did take
+out some things. The old updates have been deleted and stuff. There's nothing
+more I can really add, so I hope I don't need to update anymore. Good day,
+good night and good game.
+
+[Old updates deleted]
+_____________________________________________________________________________
+
+
+
+Table of Contents
+------------------
+
+    01.  Controls & Gameplay
+             Controls
+             Dark Cloud Concepts
+             Exploration Mode
+             Battle Mode
+             Fishing
+    02.  Dark Story
+             Characters
+    03.  Walkthrough
+             Chapter One
+             Chapter Two
+             Chapter Three
+             Chapter Four
+             Chapter Five
+             Chapter Six
+             Demon Shaft
+    04.  Rebuilding The Villages
+             Norune Village
+             Matataki Village
+             Queens
+             Muska Lacka
+             Moon Factory
+             Gallery of Time
+    05.  All Things Weapons
+             Weapon Stats
+             Weapon Evolutions
+             Weapon Flowcharts
+             Weapon Abilities
+             Secret Weapons
+             Attachments
+             Weapon-Building Hints
+    06.  Bestiary
+    07.  Boss Strategies
+    08.  Item List
+    09.  Miscellaneous
+             Tips & Tricks
+             Frequently Asked Questions
+    10.  Outro
+             Special Thanks
+             Contributor Credits
+             Legal Junk
+             Shameless Self-Promotion

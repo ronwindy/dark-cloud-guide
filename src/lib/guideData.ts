@@ -1,37 +1,54 @@
-import manifest from '../data/manifest.json';
+import fs from 'node:fs';
+import path from 'node:path';
 
-export type GroupEntry = { id: string; title: string; icon: string };
-export type PageEntry = {
+export interface PageEntry {
   id: string;
-  group: string;
   title: string;
-  /** Page h1 when it differs from the sidebar title. */
-  heading?: string;
+  group: string;
   file: string;
-  /** Header illustration: a component in src/components/scenes/. */
-  scene: string;
-  /** Show the "Filter this page" bar. */
-  filter?: boolean;
-};
-
-export const pages: PageEntry[] = manifest.pages;
-export const groups: GroupEntry[] = manifest.groups;
-
-export function getPage(id: string): PageEntry {
-  const page = pages.find((p) => p.id === id);
-  if (!page) throw new Error(`Unknown page id "${id}" (not in src/data/manifest.json)`);
-  return page;
 }
 
-export function getGroup(id: string): GroupEntry {
-  const group = groups.find((g) => g.id === id);
-  if (!group) throw new Error(`Unknown group id "${id}"`);
-  return group;
+export interface TocGroup {
+  /** Position in the sidebar; keeps repeated group names apart. */
+  key: string;
+  group: string;
+  entries: PageEntry[];
 }
 
-/** Previous and next page in reading order (undefined at the ends). */
-export function neighbours(id: string): { prev?: PageEntry; next?: PageEntry } {
-  const i = pages.findIndex((p) => p.id === id);
-  return { prev: pages[i - 1], next: pages[i + 1] };
+const DATA_DIR = path.resolve(process.cwd(), 'src/data');
+
+/** Pages in reading order, as listed (and hand-editable) in src/data/manifest.json. */
+export function getPages(): PageEntry[] {
+  return JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'manifest.json'), 'utf-8')).pages;
 }
 
+export function readPageFile(file: string): string {
+  return fs.readFileSync(path.join(DATA_DIR, 'pages', file), 'utf-8');
+}
+
+const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+/** Escapes text for a <pre>. Hides leading/trailing blank lines. */
+export function renderText(text: string): string {
+  return escapeHtml(text.replace(/^\s*\n/, '').trimEnd());
+}
+
+/** Sidebar data: pages grouped by consecutive group name. */
+export function getToc(): TocGroup[] {
+  const groups: TocGroup[] = [];
+  for (const page of getPages()) {
+    let g = groups[groups.length - 1];
+    if (!g || g.group !== page.group) {
+      g = { key: String(groups.length), group: page.group, entries: [] };
+      groups.push(g);
+    }
+    g.entries.push(page);
+  }
+  return groups;
+}
+
+export function getNeighbours(id: string): { prev?: PageEntry; next?: PageEntry } {
+  const pages = getPages();
+  const at = pages.findIndex((p) => p.id === id);
+  return at < 0 ? {} : { prev: pages[at - 1], next: pages[at + 1] };
+}

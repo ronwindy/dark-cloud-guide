@@ -1,9 +1,9 @@
 # Design
 
-Storybook-parchment reader theme for *Dark Cloud* (rebuilding the world, a book you can alt-tab to). All tokens are CSS variables at the top of `src/styles/global.css`; each component's own styles sit in its `<style>` block.
+Night-only reader theme for *Dark Cloud* (moonlit village, dark genie, lavender "Dark Cloud" logo). Tailwind tokens in `tailwind.config.mjs` (indigo-ink `void`/`obsidian`, lavender-silver `slate` lights, `moon-*` gold ornaments, `lavender-*` links/active states, `violet-*` glows, Cinzel headings, Jost body, Courier Prime for the ASCII text) and component classes in `src/styles/global.css`. `color-scheme: dark`; there is no light mode or toggle.
 
-- **Palette:** day = warm parchment (`--paper #f1e4c3`, ink brown, crimson `--accent`, `--gold`); night = violet-ink parchment (`:root[data-theme=dark]`, `--paper #241a2e`). Theme toggle stores `dc_theme` in localStorage; an inline script in `BaseLayout.astro` applies it before paint (the toggle lives in `Topbar.astro`).
-- **Type:** Cinzel Decorative (display), Cinzel (headings), IM Fell English / Cormorant Garamond (body), Cascadia/Consolas monospace for ASCII maps (`--f-mono`, size `--asc`). Loaded from Google Fonts in the layout head.
-- **Illustration:** each page has an original inline SVG "scene" in its header (`src/components/scenes/`, picked by the page's `scene` in the manifest), colored through `--sc-bg`/`--sc1..5` so it follows the theme. Icons are a Lucide-style stroke sprite rendered by `IconSprite.astro` (`#i-<name>`).
-- **Layout:** sticky top bar, collapsible sidebar with per-group read counts and an on-page outline, page header + `.prose` article, prev/next pager with a "Mark as read" seal button, home page with hero, progress bar and group cards.
-- **Behavior:** read state and last position in localStorage (`dc_read`), keyboard shortcuts (m menu, t theme, x mark read, h home, arrow keys prev/next).
+- **Background:** `public/background.jpg` (night village) fixed behind a dark violet overlay gradient so text stays readable (`.site-bg` in `BaseLayout.astro` / `global.css`). On small or touch screens it is not fixed: `background-mobile.jpg` sits behind the top 75% of the page and fades into the plain page colour.
+- **Branding:** `public/logo.png` (transparent PNG) in the sidebar, mobile header and home page; favicons are `favicon-32.png`, `favicon-512.png` and `apple-touch-icon.png`. Glows are violet/lavender.
+- **Navigation:** solid indigo-ink sidebar (`.ink-sidebar`, no blur) with a gold edge; collapsible, state in localStorage; mobile drawer; groups collapsible and auto-open on the current page. Active entry is lavender on a violet tint. Ornaments are plain gold lines with a small diamond.
+- **Page body:** lavender-silver `.ink-heading` titles over a gold rule with a small diamond, dark ink `<pre>` with a thin gold frame, moon-gold/violet prev/next cards, green "read" states.
+- **Originals:** the unoptimised art lives in `raw-sources/art/` (gitignored); `public/` holds the compressed copies.

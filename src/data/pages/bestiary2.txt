@@ -1,0 +1,280 @@
+=============================================================================
+DASHER
+=============================================================================
+Location: Divine Beast Cave
+
+These guys are pretty easy despite its size and its massive club. Once you've
+got it locked on target it will attempt to hit you, and then run away. So,
+you could always just slash them silly while chasing them. They're pretty fun
+to play with. :)
+
+
+=============================================================================
+DIAMOND (6 Abs)
+=============================================================================
+Location: Gallery of Time
+
+Diamond is the third of the playing card soldiers you'll face and he is also
+limited to a short range attack.  Let him approach and just slash him apart
+using your superior speed or just blast him from long range.
+
+
+=============================================================================
+DRAGON
+=============================================================================
+Location: Divine Beast Cave
+
+These guys work kinda like Statues, but not quite. Use the same tactics here
+like you did with the Statue. Try to refrain yourself from using combos on
+these guys as they can retaliate quite well with attacks of their own. They
+are slow, yes, but their attacks hurt a lot. Think of "hit and run" attacks
+with this deadly foe. Jump in to attack, then quickly get out of the way.
+
+
+=============================================================================
+DUNE (10 Abs)
+=============================================================================
+Location: Sun & Moon Temple
+
+These guys are pretty tough since they tend to like to advance with a wall
+like projection in front of them to defend against attacks like a shield and
+only let it down when they launch their melee attack.  Advance on them and
+slash when the shield is down then quickly step back before they attack, it
+may take a couple of fights to get the timing of their attack pattern but
+once you do it's simple to take them down, of course shooting them is the
+easiest way to dispatch them.
+
+
+=============================================================================
+EARTH DIGGER
+=============================================================================
+Location: Wise Owl Forest
+
+Like moles, they can dig underground and jump out when you least expect it.
+Their attacks hurt if you're defense isn't high enough. They also puff out a
+mist of Freeze status smoke. Once you get caught in it, quickly switch to
+another member to avoid dying, or simply use some Anti-freeze item.  They're
+annoying to deal with.
+
+
+=============================================================================
+EVIL BAT (4 Abs)
+=============================================================================
+Location: Gallery of Time
+
+The Evil Bat is an upgraded form of the Cave Bat from the Divine Beast Cave
+and is the easiest enemy in the Gallery of Time.  You can defeat these bats
+using the same strategies that worked for the Cave Bats and shouldn't be a
+challenge to you by this point in the game.
+
+
+=============================================================================
+FLIFLI
+=============================================================================
+Location: Wise Owl Forest
+
+FliFlis act like clumsy little fools. They attack you by tripping themselves
+and falling on their face. The pollen they emit can poison you, so don't let
+it touch you. It's better to attack from afar, or just go in slash like mad.
+
+
+=============================================================================
+FRIDAY
+=============================================================================
+Location: Wise Owl Forest
+
+A nasty little dwarf that can box like no one else. Just stick it to him
+when his guard is down. They'd usually try to run away and then attack again,
+which is very annoying.  So you're going to have to catch up to it before you
+can deliver a few slashes in the arse.
+
+
+=============================================================================
+GHOST
+=============================================================================
+Location: Divine Beast Cave
+
+These guys are a pain. They disappear and appear elsewhere. Always dodge
+its purple fireballs. I don't know what they do, but I was to weak to stay
+and find out at the time. :) You can only hurt him when he is on the ground.
+
+
+=============================================================================
+GOLEM (4 Abs)
+=============================================================================
+Location: Sun & Moon Temple
+
+These guys are slow moving and slow to launch an attack, just move in and
+slash them then dance back to dodge their swing or ground-pounding attack.
+The ground attack can cause damage if you're too close to the monster so
+learn the range on the attack and be sure to back up far enough when you
+dodge the attack.  They go down very easily under a missile barrage without
+any risk to your character.
+
+
+=============================================================================
+GUNNY
+=============================================================================
+Location: ShipWreck
+
+An oversized clam that has obviously took his vitamins. It's not much of a
+threat. Just allocate some fire-based attributes to the weapon and it will
+fall before your blade, ax, slingshot, or whatever.
+
+
+=============================================================================
+GYON
+=============================================================================
+Location: ShipWreck
+
+When you're close enough, it'll start to charge at you with its trident in
+hand. He hurts if you're not careful and especially dangerous when you have
+other monsters on your back.
+
+
+=============================================================================
+HALLOWEEN
+=============================================================================
+Location: Wise Owl Forest
+
+Pretty annoying fellows that chuck lovely fireballs at you to make you burn
+like hell. Either get in and slash wildly at it, or use Xiao and attack it in
+a professional fashion.
+
+
+=============================================================================
+HALEY HOLEY
+=============================================================================
+Location: Wise Owl Forest
+
+Xiao is the best person to use against these guys. Since their leaves act as
+propellers, it's dangerous to battle close-range with them. Using Xiao is
+much more easier to kill them with her slingshot.  You can't hurt them when
+they're planted in the ground. Hit them to lure them out.
+
+
+=============================================================================
+HEART (6 Abs)
+=============================================================================
+Location: Gallery of Time
+
+The second of the playing card soldiers, this one possesses a missile attack
+but again is nothing your characters should fear.  You can use your ranged
+attacks to pick him apart or just rush right up to him and slash him apart
+with your best melee weapon.
+
+
+=============================================================================
+HELLPOCKLE (5 Abs)
+=============================================================================
+Location: Moon Sea
+
+These guys are probably the easiest enemies on the Moon Sea, they advance
+towards you at a walk and should go down in a slash or two from your best
+melee or ranged fighter.  If you hit them and they don't go down they will
+usually try and rush at you to hit you with their shovel but can do little
+damage to you by this point in the game.
+
+
+=============================================================================
+HORNET
+=============================================================================
+Location: Wise Owl Forest
+
+Like a buzzing bee, you can hear these guys from a mile away. Generally easy
+enough to kill with a slash or two.
+
+
+=============================================================================
+JOKER (6 Abs)
+=============================================================================
+Location: Gallery of Time
+
+The Joker is the last of the playing card soldiers and is again limited to
+short range attacks.  Take him out with extreme prejudice and hopefully with
+an ease that makes you wonder what these enemies are doing in this dungeon.
+
+
+=============================================================================
+KING MIMIC
+=============================================================================
+Location: Divine Beast Cave, Wise Owl Forest, ShipWreck,
+          Sun & Moon Temple (15 Abs), Moon Sea (12 Abs)
+
+
+A pretty tricky fellow. These guys can suddenly lunge at you when you least
+expect it. 'Specially if you're opening weapon chests. Dance around him and
+stick it to him when his guard is down.
+
+
+=============================================================================
+KING PRICKLY
+=============================================================================
+Location: Wise Owl Forest
+
+These guys drop from the thick canopy. You can't see them in casual view, but
+you could see their shadows on the ground, as well as sense them on the map.
+If you run into their line of attack, they'll drop on you and knock off a lot
+of HP. When they land on the ground, just slash away at them.
+
+
+=============================================================================
+LICH (12 Abs)
+=============================================================================
+Location: Gallery of Time
+
+The Lich is an upgraded version of the Ghost and has the same attack pattern
+as his weaker cousin.  Take him down as he approaches using your best long
+range combatant or just slash him before he starts to rise up into the air.
+
+
+=============================================================================
+LIVING ARMOR (6 Abs)
+=============================================================================
+Location: Gallery of Time
+
+The Living Armor is an upgraded version of the Statues from the Divine Beast
+Cave and have the same slow attack speed.  You can just dance around them as
+you pick them apart, they shouldn't last long.
+
+
+=============================================================================
+MASK OF PRAJNA
+=============================================================================
+Location: ShipWreck
+
+It's like some kind of scary mask with a sword and fan. I forgot what those
+were called, but they're easy to deal with. Dodge their poison gas attacks,
+and finish them off with relentless slashing.
+
+
+=============================================================================
+MASTER JACKET
+=============================================================================
+Location: Divine Beast Cave
+
+A skeleton wearing a trenchcoat. A former member of the Trenchcoat Mafia? :)
+He's kinda annoying, but simple to defeat when you've dealt with its brothers
+(Skeleton Soldiers) enough.
+
+
+=============================================================================
+MIMIC
+=============================================================================
+Location: Divine Beast Cave, Wise Owl Forest, ShipWreck,
+          Sun & Moon Temple (6 Abs), Moon Sea (6 Abs)
+
+A smaller and weaker version of King Mimic. These guys can suddenly lunge at
+you when you least expect it. 'Specially if you're opening item chests. Dance
+around him and stick it to him when his guard is down.
+
+
+=============================================================================
+MONDAY
+=============================================================================
+Location: Wise Owl Forest
+
+A nasty little dwarf that wields a spear like no other. Just stick it to him
+when his guard is down. They'd usually try to run away and then attack again,
+which is very annoying.  So you're going to have to catch up to it before you
+can deliver a few slashes in the arse.

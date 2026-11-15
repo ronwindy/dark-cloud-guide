@@ -1,0 +1,58 @@
+CHESTS
+-------
+
+Chests can be found in various places and may appear at random. Most chests
+can be seen on the casual screen. When you've found one, simply walk up to it
+and open it using the X button. However, some chests are "trick" chests. They
+contain harmful traps, kinda like Vagrant Story's trap floor panels. It's not
+possible to watch out for them until you're caught in one.
+
+
+KEYS
+------
+
+Most doors in town are unlocked, but some require special keys to open them.
+Where do you find these keys? Monsters will usually drop them upon defeat,
+and you may sometimes obtain them through friendly conversations with the
+locals. Keys can also be found in chests. You can usually tell if a door is
+locked when they can't be opened with the X button. =P
+
+
+WATER
+-------
+
+Believe it or not, this is the first game I've seen that requires Toan and
+co. to keep their bodies properly hydrated with water. Water, in this game,
+can replenish your health, water meter, and stuff...So a good thing to keep
+in mind is when you come across a spring, drink up and call upon your other
+party members to drink their fill as well. Don't be a water hog! If there're
+no springs or water-related things around, just pray that you've remembered
+to bring along an available water flask. If your character becomes dehydrated
+his HP will gradually decrease, and like humans, they become weaker in combat
+and other actions.
+
+
+MAP
+-----
+
+The map, like any map, lays out the current area for you. Voids will fill as
+Toan explores the area and discovers new areas and such. Sometimes you can
+find map fragments in chests. Map fragments help patch up the holes and
+disclose other areas of the dungeon, or whatever. It immediately gets added
+to the map information displayed.  When reading maps, you may find many icons
+and color-coded shapes. You can obtain these "location" information by
+finding the Magical Crystal on each floor. Once found, the symbols will
+instantly be displayed on the map. These shapes and icons are meaningful if
+you know how to read the map properly. These are what those symbols mean:
+
+  "Pink arrow"    – Toan's current location on the dungeon floor
+  "Green dots"    – locations of Atla
+  "Green squares" – Floor entrances
+  "Yellow square" – Floor exits
+  "Red dots"      - Symbolize monsters. When they begin to move, they're
+                    coming for you. Beware.
+  "Yellow dots"   - chests and objects that can be accessible
+  "Blue Circles"  - Water sources where you can quench your thirst
+  "Small Circles" – Mystery circles. These cause either good or bad status
+                    effects.
+  "Pink ("?")"    - designate entrances to the secret areas

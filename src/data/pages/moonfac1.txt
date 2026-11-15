@@ -1,0 +1,141 @@
+        ____
+       |    |<--------- This square shows the correct placement of the
+       |____|           Parts HD of the Sun Giant, refer to the map below
+\        /\        /    for relative positioning of the other Sun Giant
+ \      /  \      /     georama pieces.
+  \    /    \    /
+   \  /      \  /       Note: The head should be oriented so the top of
+    \/        \/        the head is towards the top of the drawing.
+
+         /\
+        /  \
+       /    \
+      /      \
+     /        \
+    /          \
+
+The pattern inside the circle should be oriented as shown above.  The ASCII
+map below assumes you have done this already and that you have placed the
+Parts HD in the correct position.  The Sun Giant has just enough room to fit
+inside the factory when positioned correctly.  The PartsH D, when placed in
+the correct position will not be at the very top and center of the circle,
+this is the upper limit of the factory floor.  The raised platform with the
+ramp at the bottom of the circle is the lower limit of the factory floor.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+|                               --------                                  |
+|                               |  HD  |                                  |
+|                               |      |                                  |
+|                     --------  --------  --------                        |
+|                     |      |------------|      |                        |
+|                     | HGR  ||          ||  HGL |                        |
+|                     |      | \   CT   / |      |                        |
+|                     --------  |      |  --------                        |
+|                       ----    |      |    ----                          |
+|       Parts HGR2 ---> |  |    --------    |  | <--- Parts HGL2          |
+|                       |  |   ----------   |  |                          |
+|                       ----   |   WT   |   ----                          |
+|                      ------  |        |  ------                         |
+|                      |    |  ----------  |    |                         |
+|        Parts AMR --> |    |  ----  ----  |    | <-- Parts AML           |
+|                      |    |  |  |  |  |  |    |                         |
+|                      ------  |  |  |  |  ------                         |
+|        Parts TIR ----------> |  |  |  | <---------- Parts TIL           |
+|                              ----  ----                                 |
+|                             ------------                                |
+|                             |    ||    |                                |
+|        Parts FTR ---------> |    ||    | <--------- Parts FTL           |
+|                             |    ||    |                                |
+|    -----------              |    ||    |                                |
+|    | Lookout |              |    ||    |                                |
+|    |  Tower  |              ------------                                |
+|    |         |            |¯¯¯¯¯¯¯¯¯¯¯¯¯¯|________                      |
+|    -----------            |   Platform   |  Ramp  |                     |
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+============
+PARTS HD
+============
+Items needed:
+- Crown
+- Eye
+
+How to build it: It should be placed at the end of the factory opposite the
+high platform on the south end of the factory and should be oriented so the
+neck is down towards the platform.
+
+Rewards: After a short cinema sequence with Osmond and Toan on the head of
+the Sun Giant you will receive the Admission Ticket that will allow you to
+enter contest at the Coliseum.
+
+
+============
+PARTS CT
+============
+Items needed:
+- Scale
+- Crest Armor
+- Sun Sphere
+
+How to build it: Place this directly below the head of the Sun Giant.
+
+Rewards: You will only be able to rebuild the chest of the Sun Gient when
+you have won the contest at the Coliseum.  This will complete the Sun Giant
+and enable you to travel to Dark Heaven Castle.
+
+
+============
+PARTS WT
+============
+Items needed:
+- Buffalo's Horn
+- Skirt
+- Skull
+
+How to build it: Place this directly below the waist of the Sun Giant.
+
+Rewards: None
+
+
+============
+PARTS HGR
+============
+Items needed:
+- Eagle Head
+- Eagle Feather
+- Big Urn
+- Amuleo
+
+How to build it: Place this directly beside the chest of the Sun Giant.
+This should be placed on the Sun Giant's right side.
+
+Rewards: A very short cinema sequence that shows Amuleo surveying the floor
+of the Moon Factory.  Afterwards he will be on the floor of the factory.
+
+
+============
+PARTS HGL
+============
+Items needed:
+- Big Urn
+- Eagle Feather
+- Eagle Head
+- Gotch
+
+How to build it: Place this directly beside the chest of the Sun Giant.
+This should be placed on the Sun Giant's left side.
+
+Rewards: Another short cinema sequence that shows Gotch trying to leave the
+project but Osmond talks him into staying.
+
+
+============
+PARTS HGR2
+============
+Items needed:
+- Urn
+
+How to build it: Place this directly below the Parts HGR of the Sun Giant.
+
+Rewards: None

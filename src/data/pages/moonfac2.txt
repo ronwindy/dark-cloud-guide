@@ -1,0 +1,113 @@
+============
+PARTS HGL2
+============
+Items needed:
+- Urn
+
+How to build it: Place this directly below the Parts HGL of the Sun Giant.
+
+Rewards: None
+
+
+============
+PARTS AMR
+============
+Items needed:
+- Ammonite
+- Twisted Horn
+- Elephant Emblem
+- Mammoth Tusk
+- Finger
+
+How to build it: Place this directly below the Parts HGR2 of the Sun Giant.
+
+Rewards: None
+
+
+============
+PARTS AML
+============
+Items needed:
+- Ammonite
+- Twisted Horn
+- Elephant Emblem
+- Mammoth Tusk
+- Finger
+
+How to build it: Place this directly below the Parts HGL2 of the Sun Giant.
+
+Rewards: None
+
+
+============
+PARTS TIR
+============
+Items needed:
+- Urn
+- Tomahon
+
+How to build it: Place this directly below the waist of the Sun Giant.  This
+should be arranged so that it is on the right side of the Sun Giant, forming
+the thigh area of the right leg.
+
+Rewards: A cinema sequence between Tomahon and Osmond where they discuss why
+the Sun Giant fell apart the first time and why it is important to acquire
+the Sun Sphere at the Coliseum.
+
+
+============
+PARTS TIL
+============
+Items needed:
+- Urn
+- Boon
+
+How to build it: Place this directly below the waist of the Sun Giant.  This
+should be arranged so that it is on the left side of the Sun Giant, forming
+the thigh area of the left leg.
+
+Rewards: A cinema sequence where Boon tries to run away but Osmond convinces
+him that it would be better to stick around.
+
+
+============
+PARTS FTR
+============
+Items needed:
+- Nail
+- Big Urn
+- Turtle Shell
+- Spine of Shell
+
+How to build it: Place this directly below the Parts TIR of the Sun Giant.
+
+Rewards: None
+
+
+============
+PARTS FTL
+============
+Items needed:
+- Nail
+- Big Urn
+- Turtle Shell
+- Spine of Shell
+
+How to build it: Place this directly below the Parts TIL of the Sun Giant.
+
+Rewards: None
+
+
+============
+LOOKOUT
+============
+Items needed:
+- Second Floor
+- Ladder
+- Ladder
+
+How to build it: This can be placed to the right or left of the Sun Giant.
+There are only two spots this can be placed when the Sun Giant has been
+correctly assembled.
+
+Rewards: None

@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import project from '../../../project.config.json';
+import { getPages, readPageFile, renderText, getNeighbours } from '../../lib/guideData';
+import { ChevronLeft, ChevronRight } from '@lucide/astro';
+
+export function getStaticPaths() {
+  return getPages().map((page) => ({ params: { id: page.id }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const { prev, next } = getNeighbours(page.id);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const html = renderText(readPageFile(page.file));
+const href = (id: string) => `${baseUrl}/guide/${id}`;
+---
+
+<BaseLayout
+  title={`${page.title} — ${project.pageTitleSuffix}`}
+  description={`${project.pageDescriptionPrefix} — ${page.group}: ${page.title}`}
+  currentId={page.id}
+>
+  <article class="max-w-5xl mx-auto space-y-6">
+    <div class="flex items-center justify-between text-sm text-slate-400 border-b border-slate-800/80 pb-4">
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 min-w-0">
+        <a href={`${baseUrl}/`} class="hover:text-moon-400 transition-colors flex-shrink-0">Contents</a>
+        <span aria-hidden="true">/</span>
+        <span class="truncate max-w-[120px] sm:max-w-xs">{page.group}</span>
+      </nav>
+      <nav aria-label="Previous and next page" class="flex items-center gap-3 flex-shrink-0 ml-2">
+        {prev && (
+          <a href={href(prev.id)} aria-label={`Previous: ${prev.title}`} class="hover:text-moon-400 text-slate-300 transition-colors flex items-center gap-1">
+            <ChevronLeft class="w-3.5 h-3.5" aria-hidden="true" /><span class="hidden sm:inline">Prev</span>
+          </a>
+        )}
+        {next && (
+          <a href={href(next.id)} aria-label={`Next: ${next.title}`} class="hover:text-moon-400 text-slate-300 transition-colors flex items-center gap-1">
+            <span class="hidden sm:inline">Next</span><ChevronRight class="w-3.5 h-3.5" aria-hidden="true" />
+          </a>
+        )}
+      </nav>
+    </div>
+
+    <header class="text-center">
+      <h1 class="page-title ink-heading text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold">{page.title}</h1>
+      <div class="page-title-rule mx-auto" aria-hidden="true"><span></span></div>
+    </header>
+
+    <div class="guide-body">
+      <pre class="guide-text font-source-art custom-scrollbar" set:html={html} />
+    </div>
+
+    <div class="flex justify-center">
+      <button type="button" class="mark-read" data-mark-read={page.id} aria-pressed="false">Mark as read</button>
+    </div>
+
+    <nav class="pager border-t border-slate-800/80 pt-6" aria-label="Previous and next page">
+      {prev ? (
+        <a href={href(prev.id)} class="pager-btn pager-prev" rel="prev">
+          <ChevronLeft class="pager-icon" aria-hidden="true" />
+          <span class="pager-text"><span class="pager-label">Previous</span><span class="pager-title">{prev.title}</span></span>
+        </a>
+      ) : <span></span>}
+      {next ? (
+        <a href={href(next.id)} class="pager-btn pager-next" rel="next">
+          <span class="pager-text"><span class="pager-label">Next</span><span class="pager-title">{next.title}</span></span>
+          <ChevronRight class="pager-icon" aria-hidden="true" />
+        </a>
+      ) : <span></span>}
+    </nav>
+  </article>
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  icon: any;
+  isActive: boolean;
+  pageId?: string;
+}
+
+const { href, title, icon: EntryIcon, isActive, pageId } = Astro.props;
+---
+
+<a
+  href={href}
+  data-page-id={pageId}
+  class={`block px-2.5 py-1.5 rounded text-sm transition-colors ${
+    isActive
+      ? 'bg-violet-500/20 text-lavender-200 font-medium border-l-2 border-lavender-400'
+      : 'text-slate-300 hover:text-moon-300 hover:bg-slate-850'
+  }`}
+  title={title}
+>
+  <span class="flex items-center gap-2 min-w-0">
+    <EntryIcon class="w-3.5 h-3.5 flex-shrink-0 text-moon-400/80" aria-hidden="true" />
+    <span class="truncate min-w-0">{title}</span>
+  </span>
+</a>

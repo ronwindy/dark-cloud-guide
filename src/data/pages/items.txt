@@ -1,0 +1,317 @@
+___ _________________________________________________________________________
+\  \\___   ___________________________________________________________   ___/
+ | |    | |                                                           | |
+ | |    | |                 08.   I T E M  L I S T                    | |
+ | |____| |___________________________________________________________| |___
+/___________________________________________________________________________\
+
+
+
+These items listed are items that I HAVE found in the game personally. Items
+will be added on as I progress through the adventure. I may not get all of
+them, so may god (or you) help me if he/you will. They will be divided into
+categories for convenient purposes. It should be much better than a cluttered
+item list.
+
+
+       _______________________________________________________________
+      |  ATTACHMENTS    | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Thunder        | Thunder attribute added to weapon.          |
+      | --------------- |-------------------------------------------- |
+      |  Fire           | Fire attribute added to weapon.             |
+      | --------------- |-------------------------------------------- |
+      |  Ice            | Ice attribute added to weapon.              |
+      | --------------- |-------------------------------------------- |
+      |  Wind           | Wind attribute added to weapon.             |
+      | --------------- |-------------------------------------------- |
+      |  Holy           | Holy attribute added to weapon.             |
+      | --------------- |-------------------------------------------- |
+      |  Attack+1,2,3   | Adds X number of characteristics to weapon. |
+      | --------------- |-------------------------------------------- |
+      |  Endurance+1,2,3| Adds X number of characteristics to weapon. |
+      | --------------- |-------------------------------------------- |
+      |  Speed+1,2,3    | Adds X number of characteristics to weapon. |
+      | --------------- |-------------------------------------------- |
+      |  Magic P.+1,2,3 | Adds X number of characteristics to weapons.|
+      | --------------- |-------------------------------------------- |
+      |  Garnet         | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Pearl          | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Aquamarine     | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Topaz          | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Opal           | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Diamond        | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Ruby           | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Amethyst       | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Emerald        | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Sapphire       | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Peridot        | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Turquoise      | A gem that can be attached to a weapon.     |
+      | --------------- |-------------------------------------------- |
+      |  Sun            | A unique gem attachment for weapons.        |
+      | --------------- |-------------------------------------------- |
+      |  Undead Buster  | More effective to Undead type enemies.      |
+      | --------------- |-------------------------------------------- |
+      |  Stone Breaker  | More effective to Stone type enemies.       |
+      | --------------- |-------------------------------------------- |
+      |  Sky Hunter     | More effective to Flying type enemies.      |
+      | --------------- |-------------------------------------------- |
+      |  Mage Slayer    | More effective to Mage type enemies.        |
+      | --------------- |-------------------------------------------- |
+      |  Mimic Buster   | More effective to Mimic type enemies.       |
+      | --------------- |-------------------------------------------- |
+      |  Dino Slayer    | More effective to Dino type enemies.        |
+      | --------------- |-------------------------------------------- |
+      |  Dragon Slayer  | More effective to Dragon type enemies.      |
+      | --------------- |-------------------------------------------- |
+      |  Plant Buster   | More effective to Plant type enemies.       |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  FOOD TYPES     | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Bread          | Restores a small amount of health.          |
+      | --------------- |-------------------------------------------- |
+      |  Cheese         | Restores a moderate amount of health.       |
+      | --------------- |-------------------------------------------- |
+      |  Premium Chicken| Restores all lost health.                   |
+      | --------------- |-------------------------------------------- |
+      |  Soap           | Cleanses the body of sticky stuff.          |
+      | --------------- |-------------------------------------------- |
+      |  Mellow Banana  | Recovers HP, but will dehydrate character.  |
+      | --------------- |-------------------------------------------- |
+      |  Fruit of Eden  | Increases the max HP by X number of points. |
+      | --------------- |-------------------------------------------- |
+      |  Candy          | Given to you by Claude.                     |
+      | --------------- |-------------------------------------------- |
+      |  Antidote Drink | Purifies the body of Poison status.         |
+      | --------------- |-------------------------------------------- |
+      |  Stamina Drink  | Raises power. It gradually increases.       |
+      | --------------- |-------------------------------------------- |
+      |  Regular Water  | Quenches some of the Thirst Meter.          |
+      | --------------- |-------------------------------------------- |
+      |  Tasty Water    | Quenches a majority of the Thirst Meter.    |
+      | --------------- |-------------------------------------------- |
+      |  Premium Water  | Quenches the Thirst Meter completely.       |
+      | --------------- |-------------------------------------------- |
+      |  Mighty Healing | Heals all conditions.                       |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  STAT INCREASE  | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Fluffy Doughnut| Toan's fav. food. Increases Toan's defense. |
+      | --------------- |-------------------------------------------- |
+      |  Fish Candy     | Xiao's fav. food. Increases Xiao's defense. |
+      | --------------- |-------------------------------------------- |
+      |  Grass Cake     | Goro's fav. food. Increases Goro's defense. |
+      | --------------- |-------------------------------------------- |
+      |  Witch Parfait  | Ruby's fav. food. Increases Ruby's defense. |
+      | --------------- |-------------------------------------------- |
+      |  Scorpion Jerky | Ungaga's fav. food. Increases his defense.  |
+      | --------------- |-------------------------------------------- |
+      |  Carrot Cookie  | Osmond's fav. food. Increases his defense.  |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  THROW ITEMS    | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Bomb           | Explodes major damage to the enemy.         |
+      | --------------- |-------------------------------------------- |
+      |  Stone          | Inflicts a small amount of damage to enemy. |
+      | --------------- |-------------------------------------------- |
+      |  Lightning Gem  | Lightning-based attack to enemy.            |
+      | --------------- |-------------------------------------------- |
+      |  Inferno Gem    | Fire-based attack to the enemy.             |
+      | --------------- |-------------------------------------------- |
+      |  Blizzard Gem   | Ice-based attack to the enemy.              |
+      | --------------- |-------------------------------------------- |
+      |  WhirlWind Gem  | Wind-based attack to the enemy.             |
+      | --------------- |-------------------------------------------- |
+      |  Sacred Gem     | Holy-based attack to the enemy.             |
+      | --------------- |-------------------------------------------- |
+      |  Throbbin Cherry| Fruit that allows time to be stopped.       |
+      | --------------- |-------------------------------------------- |
+      |  Poisonous Apple| Afflicts poison status if thrown to enemy.  |
+      | --------------- |-------------------------------------------- |
+      |  Bomb Nuts      | Explodes major damage to the enemy.         |
+      | --------------- |-------------------------------------------- |
+      |  Gooey Peach    | Afflicts Gooey status if thrown to enemy.   |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  POWDERS        | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Repair Powder  | Repairs worn-out weapons to new.            |
+      | --------------- |-------------------------------------------- |
+      |  Auto-Repair    | Automatically repair weapons about to break.|
+      | --------------- |-------------------------------------------- |
+      |  Revival Powder | Revives fallen characters.                  |
+      | --------------- |-------------------------------------------- |
+      |  PowerUp Powder | Powers up weapon's grade.                   |
+      | --------------- |-------------------------------------------- |
+      |  Escape Powder  | Escape from dungeons.                       |
+      | --------------- |-------------------------------------------- |
+      |  Stand-in Powder| Choose alternate ally over fallen character.|
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  FISHING ITEMS  | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Fishing Rod    | Given to you by Alnet to go fishing.        |
+      | --------------- |-------------------------------------------- |
+      |  Prickly        | First fishing bait that Toan can get.       |
+      | --------------- |-------------------------------------------- |
+      |  Petite Fish    | Fish bait that can be found in dungeons.    |
+      | --------------- |-------------------------------------------- |
+      |  Mimi           | Fish bait that can be found in dungeons.    |
+      | --------------- |-------------------------------------------- |
+      |  Minon          | Fish bait that can be found in dungeons.    |
+      | --------------- |-------------------------------------------- |
+      |  Potato Cake    | Fish bait that can be found in dungeons.    |
+      | --------------- |-------------------------------------------- |
+      |  Carrot         | Fish bait that can be found in dungeons.    |
+      | --------------- |-------------------------------------------- |
+      |  Battan         | Fish bait that can be found in dungeons.    |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  DUNGEON KEYS   | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Cave Key       | Unlocks the doors to the Divine Beast Cave. |
+      | --------------- |-------------------------------------------- |
+      |  Dran's Crest   | Opens floor doors to the Divine Beast Cave. |
+      | --------------- |-------------------------------------------- |
+      |  Bone Key       | Unlock special doors in some dungeon floors.|
+      | --------------- |-------------------------------------------- |
+      |  Horned Key     | Key to unlock Dran's chamber.               |
+      | --------------- |-------------------------------------------- |
+      |  Pointy Chestnut| One of three keys in Wise Owl Forest.       |
+      | --------------- |-------------------------------------------- |
+      |  Red Berry      | One of three keys in Wise Owl Forest.       |
+      | --------------- |-------------------------------------------- |
+      |  Shiny Stone    | One of three keys in Wise Owl Forest.       |
+      | --------------- |-------------------------------------------- |
+      |  Mustache Key   | Unlock special doors in some dungeon floors.|
+      | --------------- |-------------------------------------------- |
+      |  Hook           | Acts as a pulley to the next deck.          |
+      | --------------- |-------------------------------------------- |
+      |  ShipCabin Key  | Unlock special doors in some dungeon floors.|
+      | --------------- |-------------------------------------------- |
+      |  King's Slate   | Opens door to next level in Sun&Moon Temple.|
+      | --------------- |-------------------------------------------- |
+      |  Stone Key      | Unlock special doors in some dungeon floors.|
+      | --------------- |-------------------------------------------- |
+      |  Gunpowder      | Allows you to fire the cannons on the moon. |
+      | --------------- |-------------------------------------------- |
+      |  Handle         | Used to lower bridges on the moon sea.      |
+      | --------------- |-------------------------------------------- |
+      |  Clock Hands    | Allows you to activate the clock faces.     |
+      | --------------- |-------------------------------------------- |
+      |  Pitchdark Key  | Opens locked doors in the Gallery of Time.  |
+      | --------------- |-------------------------------------------- |
+      |  Black Knight C.| Opens door to next level in Demon Shaft.    |
+      | --------------- |-------------------------------------------- |
+      |  Silver Key     | Opens locked gates in the Demon Shaft.      |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  KEY ITEMS      | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Changing Potion| Used to change Xiao into a human-cat.       |
+      | --------------- |-------------------------------------------- |
+      |  Moon Grass Seed| Used to make a plant grow in a special area.|
+      | --------------- |-------------------------------------------- |
+      |  Music Box Key  | Used to unlock the Music Box in Shipwreck.  |
+      | --------------- |-------------------------------------------- |
+      |  Ointment Leaf  | Can make a cure-all medicine from this item.|
+      | --------------- |-------------------------------------------- |
+      |  Foundation     | Works like facial cream for girls.          |
+      | --------------- |-------------------------------------------- |
+      |  Clay Doll      | An rare antique clay doll.                  |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  BACKFLOOR ITEMS| DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Tram Oil       | Lubricates the rusted trams to the back.    |
+      | --------------- |-------------------------------------------- |
+      |  Sun Dew        | Accelerates a plant's growth.               |
+      | --------------- |-------------------------------------------- |
+      |  Flapping Fish  | Lures the "master" to the surface.          |
+      | --------------- |-------------------------------------------- |
+      |  Secret Path Key| Opens the path for the coffin to travel.    |
+      | --------------- |-------------------------------------------- |
+      |  Bravery Launch | Allows you to take a leap on the moon.      |
+      | --------------- |-------------------------------------------- |
+      |  Flapping Duster| Allows access to back levels in Gallery.    |
+      | --------------- |-------------------------------------------- |
+      |  Crystal Eye    | Allows access to back levels in Demon Shaft.|
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/
+
+
+
+       _______________________________________________________________
+      |  MISCELLANEOUS  | DESCRIPTION                                 |
+      | --------------- |-------------------------------------------- |
+      |  Dran's Feather | Fast movement that eventually wears off.    |
+      | --------------- |-------------------------------------------- |
+      |  Treasure Key   | Actually, a key for treasure chests.        |
+      | --------------- |-------------------------------------------- |
+      |  Manual         | Given to you by the Fairy King. Tutorals.   |
+      | --------------- |-------------------------------------------- |
+      |  Pocket         | Increases number of items stored in pouch.  |
+      | --------------- |-------------------------------------------- |
+      |  Gourd          | Increases max value of Thirst Meter.        |
+      | --------------- |-------------------------------------------- |
+      |  Gold Buillon   | Item price no change.                       |
+      | --------------- |-------------------------------------------- |
+      |  Antidote Amulet| Prevents poison status for a while.         |
+      | --------------- |-------------------------------------------- |
+      |  A.F. Amulet    | Prevents freeze status for a while.         |
+      | --------------- |-------------------------------------------- |
+      |  A.G. Amulet    | Prevents gooey status for a while.          |
+      | --------------- |-------------------------------------------- |
+      |  A.C. Amulet    | Prevents curse status for a while.          |
+      | --------------- |-------------------------------------------- |
+      |  Ice Block      | Refridgerates fish to prevent spoiling.     |
+      | --------------- |-------------------------------------------- |
+      |  Rotten Fish    | Any ideas on what this does?                |
+      | --------------- |-------------------------------------------- |
+       \_____________________________________________________________/

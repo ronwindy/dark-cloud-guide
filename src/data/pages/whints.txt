@@ -1,0 +1,137 @@
+I'm adding this section based on some feedback from one of the readers of
+this FAQ who said I should include a few tips for people who are having a
+hard time building up their weapons and I'd like to send Steadybopin03
+a thank you for a good suggestion and I hope this will help some people out.
+
+
+                       ##############################
+                       BUILDING UP ABS POINTS QUICKLY
+                       ##############################
+
+There are a few easy ways to quickly build up your Abs meter for your weapons
+no matter which dungeon you are currently exploring.  The first way is to use
+those back level keys and put them to work for you.  Monsters on the back
+levels are worth twice the amount of Abs as the monsters on the front levels
+and will re-spawn every time you journey between the front and back levels.
+If you use this trick effectively you can build up two or three weapons to
+around +5 in the first dungeon at the very beginning of the game, giving you
+a good start on boosting attack power for your main weapon.  The best place
+to use this tactic is in Queens since the monsters there all give good base
+Abs points and the back levels range from around 64 Abs points to over 180
+points just for clearing it out once, a good return for the money spent to
+buy a flapping fish and block of ice in town, especially when you can keep
+going back and forth between the two parts of the level clearing them out
+until you get your weapons built up or run out of supplies.
+
+
+                       #############################
+                       EASY BUILD UP OF WEAK WEAPONS
+                       #############################
+
+There is an easy way to build up weaker weapons by using your more powerful
+weapons in one of the later areas like Queens to kill the enemy and then
+equip the weaker weapon before the monster disappears from the screen to get
+the Abs points added to that weapon instead of the more powerful weapon.  I
+know this is a pretty well known tip by now but I included it because it is
+useful if you have the patience to endure the constant weapon switching.
+
+
+                           ######################
+                           GEMS, GEMS & MORE GEMS
+                           ######################
+
+Alright, early in the game you can make do with the normal attribute, element
+and buster attachments to build up a weapon the first time but after that we
+all know by now you will almost have to get gems or spend countless hours to
+get enough Abs points to build your weapon up to +15 and put in another nine
+points of fire or anti-beast or whatever.  This gets very hard later in the
+game when multiple stats must be over 60 and some as high as 90.  Gems can be
+hard to find inside dungeons since they only appear in back levels and by the
+time you reach Dark Heaven castle and can buy them from the Fairy King you
+shouldn't need them and at 3,000 each they are a bit expensive.  This leaves
+fishing for the points to buy gems and if you have the patience this can be
+the simplest way to build up some very powerful weapons as early as Matataki
+Village.
+
+At the beginning of the game you'll want to save any of the Poison Apples you
+find until you get to Matataki Village, then you can fish for the Mardan
+Garayan fish at night from the dock by the waterfall.  Mardan Garayan do not
+appear very often at the waterfall, the chance for one to be there seems to
+be around five percent and I never went more than twenty fishing attempts in
+a row without finding one and when it did take a long time for one to appear
+there was usually another on there within a couple of casts. I know a lot of
+this depends on luck so your results may vary but I thought it was well worth
+the time for a few fish that run between 150 and 300 points each, I was up to
+over 1500 points in around 45 minutes.  The other place to fish in Matataki
+is the peanut pond which holds Tartans that average about fifty fishing
+points each.
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+*~                                                                         ~*
+*~ The Umadakara is found in Peanut pond (and as far as I can tell, NOT by ~*
+*~ the waterfall; only in the pond itself.) A friend and I have caught one ~*
+*~ each; they respond only to the carrot, and as far as I can tell, are    ~*
+*~ the only fish that do so.  Both of us caught this fish mid-afternoon.   ~*
+*~ Mine measured 113 cm and was worth 142 fishing points. The day I caught ~*
+*~ mine on was 110.                                                        ~*
+*~                                                                         ~*
+*~ Thanks to Quamp for this information.                                   ~*
+*~                                                                         ~*
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
+If you are looking to upgrade later in the game you will want to fish in the
+oasis at Muska Lacka where the Mardan Garayan appears much more frequently,
+sometimes appearing around thirty percent of the time.  The best time to fish
+for them is Dusk but they are also found here during the Night.  You can also
+find Baron Garayan fish in the oasis, even though they appear less frequently
+than the Mardan Garayan they net you around 300 and 900 fishing points each
+depending on size.
+
+The best tip for fishing in the oasis is to throw in something other than a
+Potato Cake or Poisonous Apple and see if there are some fish that don't go
+for the bait, then throw in a Poisonous Apple for that fish and see if he
+goes for that which will mean you've found a Mardan Garayan, if he doesn't go
+for it take the chance and toss in a Potato Cake and cross your fingers, you
+may have just found a Baron Garayan.  The normal bait can be just about
+anything, I found that Throbbing Cherries are good but others will work too,
+I just happened to have one in my inventory when I started fishing this way
+and everything seemed to go for it except the Barons and Mardans, this is
+also true for the Pricklies and Mimis, at least they worked for me when I
+caught one of the other types of fish on my Throbbing Cherry.  As a note to
+all of you searching for the Baron Garayan fish, he does NOT just appear as
+a huge fish but also appears from the mid-size range on up and I have mostly
+caught them in the range of about 85-120 cm and have yet to see one of them
+in the huge size at the Oasis though I did see one at the Matataki Waterfall
+but I was out of Potato Cakes at the time and couldn't catch him.
+
+
+                ###########################################
+                USE THE WEAPON STATISTICS TO YOUR ADVANTAGE
+                ###########################################
+
+I included the weapon statistics in this guide to help people plan the best
+attachments they'll need to build up their weapon and although I still have
+some blanks in the list they are steadily being filled in with information.
+You just need to compare the weapon you have to the one you are trying to
+reach and figure out which gems or attachments get you there with the least
+number of upgrades.  For example lets say you have a weapon that currently
+has a Fire 0, Ice 0, Stone 0 and Mimic 10 and you know it builds up into a
+weapon that you find has Fire 20, Ice 10, Stone 10 and Mimic 20 on the list
+of weapon statistics, your best choice would be 2 Garnets and a Turquoise,
+which would give you the required levels in all of the attributes and boost
+your attack by 10 and give you some added Beast and Stone as well.
+
+If you happen to be building up to a weapon not on the lists above you can
+still follow the same procedure to figure out the best gems to use even if
+you don't know what stats you will ultimately need.  An important thing for
+you to remember when building up your weapons is that speed and endurance
+will not hold you back from being able to build up your weapon into an
+advanced form.  I found this out accidentally while working to build up one
+of my weapons and was neglecting it's speed and endurance in favor of the
+other attributes I needed to increase.
+
+                               ----------
+
+I hope this section provides some helpful tips for building up weapons and
+even though a lot of this is common knowledge I thought it might help to
+include it here just in case someone hadn't heard these tips before.

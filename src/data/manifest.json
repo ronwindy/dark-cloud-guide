@@ -1,414 +1,292 @@
 {
-  "groups": [
-    {
-      "id": "intro",
-      "title": "Prologue",
-      "icon": "scroll"
-    },
-    {
-      "id": "g1",
-      "title": "Controls & Gameplay",
-      "icon": "pad"
-    },
-    {
-      "id": "g2",
-      "title": "Dark Story",
-      "icon": "book"
-    },
-    {
-      "id": "g3",
-      "title": "Walkthrough",
-      "icon": "map"
-    },
-    {
-      "id": "g4",
-      "title": "Rebuilding the Villages",
-      "icon": "house"
-    },
-    {
-      "id": "g5",
-      "title": "All Things Weapons",
-      "icon": "sword"
-    },
-    {
-      "id": "g6",
-      "title": "Bestiary",
-      "icon": "skull"
-    },
-    {
-      "id": "g7",
-      "title": "Boss Strategies",
-      "icon": "crown"
-    },
-    {
-      "id": "g8",
-      "title": "Item List",
-      "icon": "chest"
-    },
-    {
-      "id": "g9",
-      "title": "Miscellaneous",
-      "icon": "key"
-    },
-    {
-      "id": "g10",
-      "title": "Outro",
-      "icon": "seal"
-    }
-  ],
   "pages": [
     {
       "id": "welcome",
-      "group": "intro",
       "title": "Welcome & Overview",
-      "file": "welcome.html",
-      "scene": "prologue"
+      "group": "Prologue",
+      "file": "welcome.txt"
     },
     {
       "id": "controls",
-      "group": "g1",
       "title": "Controls",
-      "file": "controls.html",
-      "scene": "controls"
+      "group": "Controls & Gameplay",
+      "file": "controls.txt"
     },
     {
       "id": "concepts",
-      "group": "g1",
       "title": "Dark Cloud Concepts",
-      "file": "concepts.html",
-      "scene": "norune"
+      "group": "Controls & Gameplay",
+      "file": "concepts.txt"
     },
     {
       "id": "exploration",
-      "group": "g1",
       "title": "Exploration Mode",
-      "file": "exploration.html",
-      "scene": "exploration"
+      "group": "Controls & Gameplay",
+      "file": "exploration.txt"
     },
     {
       "id": "battle",
-      "group": "g1",
       "title": "Battle Mode",
-      "file": "battle.html",
-      "scene": "weapons"
+      "group": "Controls & Gameplay",
+      "file": "battle.txt"
     },
     {
       "id": "fishing",
-      "group": "g1",
       "title": "Fishing",
-      "file": "fishing.html",
-      "scene": "fishing"
+      "group": "Controls & Gameplay",
+      "file": "fishing.txt"
     },
     {
       "id": "story",
-      "group": "g2",
       "title": "The Dark Story",
-      "file": "story.html",
-      "scene": "story"
+      "group": "Dark Story",
+      "file": "story.txt"
     },
     {
       "id": "characters",
-      "group": "g2",
       "title": "Characters",
-      "file": "characters.html",
-      "scene": "moon"
+      "group": "Dark Story",
+      "file": "characters.txt"
     },
     {
       "id": "ch1",
-      "group": "g3",
       "title": "Chapter One: Norune Village & Divine Beast Cave",
-      "file": "ch1.html",
-      "scene": "exploration"
+      "group": "Walkthrough",
+      "file": "ch1.txt"
     },
     {
       "id": "ch2",
-      "group": "g3",
       "title": "Chapter Two: Matataki Village & Wise Owl Forest",
-      "file": "ch2.html",
-      "scene": "matataki"
+      "group": "Walkthrough",
+      "file": "ch2.txt"
     },
     {
       "id": "ch3",
-      "group": "g3",
       "title": "Chapter Three: Queens & the Shipwreck",
-      "file": "ch3.html",
-      "scene": "queens"
+      "group": "Walkthrough",
+      "file": "ch3.txt"
     },
     {
       "id": "ch4",
-      "group": "g3",
       "title": "Chapter Four: Muska Lacka & Sun and Moon Temple",
-      "file": "ch4.html",
-      "scene": "muska"
+      "group": "Walkthrough",
+      "file": "ch4.txt"
     },
     {
       "id": "ch5",
-      "group": "g3",
       "title": "Chapter Five: Yellow Drops & the Moon Sea",
-      "file": "ch5.html",
-      "scene": "moon"
+      "group": "Walkthrough",
+      "file": "ch5.txt"
     },
     {
       "id": "ch6",
-      "group": "g3",
       "title": "Chapter Six: Dark Heaven Castle & Gallery of Time",
-      "file": "ch6.html",
-      "scene": "demon"
+      "group": "Walkthrough",
+      "file": "ch6.txt"
     },
     {
       "id": "demon",
-      "group": "g3",
       "title": "Bonus Dungeon: The Demon Shaft",
-      "file": "demon.html",
-      "scene": "demon"
+      "group": "Walkthrough",
+      "file": "demon.txt"
     },
     {
       "id": "norune1",
-      "group": "g4",
       "title": "Norune Village (1/2)",
-      "file": "norune1.html",
-      "scene": "norune"
+      "group": "Rebuilding the Villages",
+      "file": "norune1.txt"
     },
     {
       "id": "norune2",
-      "group": "g4",
       "title": "Norune Village (2/2)",
-      "file": "norune2.html",
-      "scene": "norune"
+      "group": "Rebuilding the Villages",
+      "file": "norune2.txt"
     },
     {
       "id": "matataki1",
-      "group": "g4",
       "title": "Matataki Village (1/2)",
-      "file": "matataki1.html",
-      "scene": "matataki"
+      "group": "Rebuilding the Villages",
+      "file": "matataki1.txt"
     },
     {
       "id": "matataki2",
-      "group": "g4",
       "title": "Matataki Village (2/2)",
-      "file": "matataki2.html",
-      "scene": "matataki"
+      "group": "Rebuilding the Villages",
+      "file": "matataki2.txt"
     },
     {
       "id": "queens1",
-      "group": "g4",
       "title": "Queens (1/2)",
-      "file": "queens1.html",
-      "scene": "queens"
+      "group": "Rebuilding the Villages",
+      "file": "queens1.txt"
     },
     {
       "id": "queens2",
-      "group": "g4",
       "title": "Queens (2/2)",
-      "file": "queens2.html",
-      "scene": "queens"
+      "group": "Rebuilding the Villages",
+      "file": "queens2.txt"
     },
     {
       "id": "muska",
-      "group": "g4",
       "title": "Muska Lacka",
-      "file": "muska.html",
-      "scene": "muska"
+      "group": "Rebuilding the Villages",
+      "file": "muska.txt"
     },
     {
       "id": "moonfac1",
-      "group": "g4",
       "title": "Moon Factory (1/2)",
-      "file": "moonfac1.html",
-      "scene": "moon"
+      "group": "Rebuilding the Villages",
+      "file": "moonfac1.txt"
     },
     {
       "id": "moonfac2",
-      "group": "g4",
       "title": "Moon Factory (2/2)",
-      "file": "moonfac2.html",
-      "scene": "moon"
+      "group": "Rebuilding the Villages",
+      "file": "moonfac2.txt"
     },
     {
       "id": "gallery",
-      "group": "g4",
       "title": "Gallery of Time",
-      "file": "gallery.html",
-      "scene": "demon"
+      "group": "Rebuilding the Villages",
+      "file": "gallery.txt"
     },
     {
       "id": "wintro",
-      "group": "g5",
       "title": "Weapons: The Basics",
-      "file": "wintro.html",
-      "scene": "weapons"
+      "group": "All Things Weapons",
+      "file": "wintro.txt"
     },
     {
       "id": "wtoan",
-      "group": "g5",
       "title": "Weapon Statistics: Toan",
-      "file": "wtoan.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wtoan.txt"
     },
     {
       "id": "wxiao",
-      "group": "g5",
       "title": "Weapon Statistics: Xiao",
-      "file": "wxiao.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wxiao.txt"
     },
     {
       "id": "wgoro",
-      "group": "g5",
       "title": "Weapon Statistics: Goro",
-      "file": "wgoro.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wgoro.txt"
     },
     {
       "id": "wruby",
-      "group": "g5",
       "title": "Weapon Statistics: Ruby",
-      "file": "wruby.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wruby.txt"
     },
     {
       "id": "wungaga",
-      "group": "g5",
       "title": "Weapon Statistics: Ungaga",
-      "file": "wungaga.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wungaga.txt"
     },
     {
       "id": "wosmond",
-      "group": "g5",
       "title": "Weapon Statistics: Osmond",
-      "file": "wosmond.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wosmond.txt"
     },
     {
       "id": "wevo",
-      "group": "g5",
       "title": "Weapon Evolutions",
-      "file": "wevo.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wevo.txt"
     },
     {
       "id": "wflow1",
-      "group": "g5",
       "title": "Weapon Flowcharts (1/2)",
-      "file": "wflow1.html",
-      "scene": "weapons"
+      "group": "All Things Weapons",
+      "file": "wflow1.txt"
     },
     {
       "id": "wflow2",
-      "group": "g5",
       "title": "Weapon Flowcharts (2/2)",
-      "file": "wflow2.html",
-      "scene": "weapons"
+      "group": "All Things Weapons",
+      "file": "wflow2.txt"
     },
     {
       "id": "wabil",
-      "group": "g5",
       "title": "Weapon Abilities",
-      "file": "wabil.html",
-      "scene": "weapons",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wabil.txt"
     },
     {
       "id": "wsecret",
-      "group": "g5",
       "title": "Secret Weapons",
-      "file": "wsecret.html",
-      "scene": "weapons"
+      "group": "All Things Weapons",
+      "file": "wsecret.txt"
     },
     {
       "id": "wattach",
-      "group": "g5",
       "title": "Attachments",
-      "file": "wattach.html",
-      "scene": "workshop",
-      "filter": true
+      "group": "All Things Weapons",
+      "file": "wattach.txt"
     },
     {
       "id": "whints",
-      "group": "g5",
       "title": "Weapon-Building Hints",
-      "file": "whints.html",
-      "scene": "weapons"
+      "group": "All Things Weapons",
+      "file": "whints.txt"
     },
     {
       "id": "bestiary1",
-      "group": "g6",
-      "title": "Bestiary",
-      "heading": "Bestiary: Alexander → Dark Flower",
-      "file": "bestiary1.html",
-      "scene": "bestiary",
-      "filter": true
+      "title": "Bestiary: Alexander → Dark Flower",
+      "group": "Bestiary",
+      "file": "bestiary1.txt"
     },
     {
       "id": "bestiary2",
-      "group": "g6",
-      "title": "Bestiary",
-      "heading": "Bestiary: Dasher → Monday",
-      "file": "bestiary2.html",
-      "scene": "bestiary",
-      "filter": true
+      "title": "Bestiary: Dasher → Monday",
+      "group": "Bestiary",
+      "file": "bestiary2.txt"
     },
     {
       "id": "bestiary3",
-      "group": "g6",
-      "title": "Bestiary",
-      "heading": "Bestiary: Moon Bug → Yammich",
-      "file": "bestiary3.html",
-      "scene": "bestiary",
-      "filter": true
+      "title": "Bestiary: Moon Bug → Yammich",
+      "group": "Bestiary",
+      "file": "bestiary3.txt"
     },
     {
       "id": "bosses",
-      "group": "g7",
       "title": "Boss Strategies",
-      "file": "bosses.html",
-      "scene": "bosses",
-      "filter": true
+      "group": "Boss Strategies",
+      "file": "bosses.txt"
     },
     {
       "id": "items",
-      "group": "g8",
       "title": "Item List",
-      "file": "items.html",
-      "scene": "workshop",
-      "filter": true
+      "group": "Item List",
+      "file": "items.txt"
     },
     {
       "id": "tips1",
-      "group": "g9",
       "title": "Tips & Tricks (1/2)",
-      "file": "tips1.html",
-      "scene": "tips"
+      "group": "Miscellaneous",
+      "file": "tips1.txt"
     },
     {
       "id": "tips2",
-      "group": "g9",
       "title": "Tips & Tricks (2/2)",
-      "file": "tips2.html",
-      "scene": "tips"
+      "group": "Miscellaneous",
+      "file": "tips2.txt"
     },
     {
       "id": "faq",
-      "group": "g9",
       "title": "Frequently Asked Questions",
-      "file": "faq.html",
-      "scene": "prologue"
+      "group": "Miscellaneous",
+      "file": "faq.txt"
     },
     {
       "id": "outro",
-      "group": "g10",
       "title": "Outro, Credits & Legal",
-      "file": "outro.html",
-      "scene": "prologue"
+      "group": "Outro",
+      "file": "outro.txt"
     }
   ]
 }

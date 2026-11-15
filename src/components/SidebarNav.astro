@@ -1,0 +1,202 @@
+---
+import { getToc } from '../lib/guideData';
+import SidebarEntry from './SidebarEntry.astro';
+import { BookOpen, ScrollText, Gamepad2, Map as MapIcon, House, Swords, Skull, Crown, Package, Lightbulb, Flag, Fish, CircleHelp, ChevronRight } from '@lucide/astro';
+import project from '../../project.config.json';
+
+interface Props {
+  currentId?: string;
+  isMobileDrawer?: boolean;
+}
+
+const { currentId = '', isMobileDrawer = false } = Astro.props;
+const groups = getToc();
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Keyword map on the group name; the first match wins.
+const GROUP_ICON_RULES: Array<[RegExp, any]> = [
+  [/prologue/, ScrollText],
+  [/controls/, Gamepad2],
+  [/story/, BookOpen],
+  [/walkthrough/, MapIcon],
+  [/rebuilding/, House],
+  [/weapons/, Swords],
+  [/bestiary/, Skull],
+  [/boss/, Crown],
+  [/item/, Package],
+  [/misc/, Lightbulb],
+  [/outro/, Flag],
+];
+
+function getGroupIcon(name: string) {
+  const n = name.toLowerCase();
+  for (const [re, icon] of GROUP_ICON_RULES) if (re.test(n)) return icon;
+  return BookOpen;
+}
+
+// Keyword map: first match on "<id> <title>" wins; otherwise the group's icon.
+const ENTRY_ICON_RULES: Array<[RegExp, any]> = [
+  [/fishing/, Fish],
+  [/faq|frequently asked/, CircleHelp],
+];
+
+function getEntryIcon(id: string, title: string, groupIcon: any) {
+  const hay = `${id} ${title}`.toLowerCase();
+  for (const [re, icon] of ENTRY_ICON_RULES) if (re.test(hay)) return icon;
+  return groupIcon;
+}
+---
+
+<div class={`flex flex-col h-full w-full min-h-0 ${isMobileDrawer ? '' : 'select-none'}`}>
+  <!-- Desktop Top Logo Header -->
+  {!isMobileDrawer && (
+    <div class="sidebar-brand relative px-4 pt-5 pb-6 flex-shrink-0 flex items-center justify-center">
+      <a href={`${baseUrl}/`} class="sidebar-brand-link block group w-full" aria-label={`${project.game} Guide Home`}>
+        <img
+          src={`${baseUrl}/logo.png`}
+          alt={project.defaultTitle}
+          class="sidebar-brand-logo w-full h-auto max-h-16 object-contain mx-auto transition-transform duration-200 group-hover:scale-105"
+        />
+      </a>
+      <span class="sidebar-brand-ornament" aria-hidden="true"><i></i></span>
+    </div>
+  )}
+
+  <!-- Chapters Scroll Area -->
+  <div class="flex-1 min-h-0 overflow-y-auto p-3 space-y-3 text-sm text-slate-300 custom-scrollbar overscroll-contain" id={isMobileDrawer ? 'mobile-sidebar-list' : 'sidebar-list'}>
+    {groups.map((cat, idx) => {
+      const GroupIcon = getGroupIcon(cat.group);
+      const hasActiveEntry = cat.entries.some((entry) => entry.id === currentId);
+      const isOpenByDefault = hasActiveEntry || (!currentId && idx === 0);
+
+      return (
+        <details class="sidebar-category group rounded-lg transition-colors" open={isOpenByDefault} data-category-id={cat.key}>
+          <summary
+            class="list-none flex items-center justify-between cursor-pointer px-2 py-1.5 rounded-lg text-slate-300 hover:text-moon-300 hover:bg-slate-800/50 transition-colors focus:outline-none"
+            title={cat.group}
+          >
+            <div class="flex items-center gap-2 min-w-0">
+              <GroupIcon class="w-3.5 h-3.5 text-moon-400 flex-shrink-0" />
+              <span class="text-xs font-serif font-medium uppercase tracking-wider text-slate-200 group-hover:text-moon-300 truncate">{cat.group}</span>
+            </div>
+            <ChevronRight class="w-3.5 h-3.5 text-slate-400 transition-transform duration-200 group-open:rotate-90 flex-shrink-0" />
+          </summary>
+
+          <ul class="mt-1 space-y-0.5 pl-2.5 border-l border-slate-800/80 ml-3 py-1">
+            {cat.entries.map((entry) => {
+              const isActive = entry.id === currentId;
+              return (
+                <li class="sidebar-item" data-active={isActive ? 'true' : undefined}>
+                  <SidebarEntry
+                    href={`${baseUrl}/guide/${entry.id}`}
+                    title={entry.title}
+                    icon={getEntryIcon(entry.id, entry.title, GroupIcon)}
+                    isActive={isActive}
+                    pageId={entry.id}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      );
+    })}
+  </div>
+</div>
+
+<script>
+  function autoScrollActiveItem(listId: string) {
+    const list = document.getElementById(listId);
+    if (!list) return;
+    const activeItem = list.querySelector('[data-active="true"]');
+    if (activeItem) {
+      activeItem.scrollIntoView({ block: 'nearest' });
+    }
+  }
+
+  function initAccordionState(listId: string) {
+    const list = document.getElementById(listId);
+    if (!list) return;
+    const detailsElements = list.querySelectorAll<HTMLDetailsElement>('details.sidebar-category');
+
+    detailsElements.forEach((details) => {
+      const catId = details.getAttribute('data-category-id');
+      const hasActive = details.querySelector('[data-active="true"]');
+      if (hasActive) {
+        details.open = true;
+      } else if (catId) {
+        const stored = sessionStorage.getItem(`dark-cloud-sidebar-cat-${catId}`);
+        if (stored !== null) {
+          details.open = stored === 'true';
+        }
+      }
+
+      details.addEventListener('toggle', () => {
+        if (catId) {
+          sessionStorage.setItem(`dark-cloud-sidebar-cat-${catId}`, String(details.open));
+        }
+      });
+    });
+  }
+
+  initAccordionState('sidebar-list');
+  initAccordionState('mobile-sidebar-list');
+  autoScrollActiveItem('sidebar-list');
+  autoScrollActiveItem('mobile-sidebar-list');
+</script>
+
+<style>
+  /* Dark scrim over the sidebar so the logo reads cleanly, with a faint violet halo. */
+  .sidebar-brand {
+    background:
+      radial-gradient(ellipse 55% 50% at 50% 45%, rgba(109, 79, 194, 0.16), transparent 75%),
+      linear-gradient(180deg, rgba(5, 3, 14, 0.92) 0%, rgba(5, 3, 14, 0.78) 55%, rgba(5, 3, 14, 0.4) 100%);
+  }
+
+  /* Dark edge keeps the lettering crisp; the lavender bloom stays faint and wide. */
+  .sidebar-brand-logo {
+    filter:
+      drop-shadow(0 1px 1px rgba(0, 0, 0, 0.85))
+      drop-shadow(0 0 10px rgba(177, 162, 230, 0.2));
+    transition: transform 200ms ease, filter 200ms ease;
+  }
+
+  .sidebar-brand-link:hover .sidebar-brand-logo,
+  .sidebar-brand-link:focus-visible .sidebar-brand-logo {
+    filter:
+      drop-shadow(0 1px 1px rgba(0, 0, 0, 0.85))
+      drop-shadow(0 0 12px rgba(177, 162, 230, 0.35));
+  }
+
+  /* Gold divider: line fading out at both ends with a centre diamond. */
+  .sidebar-brand-ornament {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(196, 158, 69, 0.6) 30%,
+      rgba(196, 158, 69, 0.6) 70%,
+      transparent 100%
+    );
+  }
+
+  .sidebar-brand-ornament i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background: #0d0a1f;
+    border: 1.5px solid rgba(230, 200, 114, 0.9);
+    box-shadow: 0 0 6px rgba(230, 200, 114, 0.45);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sidebar-brand-logo { transition: none; }
+  }
+</style>
