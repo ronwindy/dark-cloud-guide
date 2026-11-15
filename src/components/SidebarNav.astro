@@ -58,31 +58,41 @@ function getEntryIcon(id: string, title: string, groupIcon: any) {
           class="sidebar-brand-logo w-full h-auto max-h-16 object-contain mx-auto transition-transform duration-200 group-hover:scale-105"
         />
       </a>
-      <span class="sidebar-brand-ornament" aria-hidden="true"><i></i></span>
+      <svg class="sidebar-brand-flourish" viewBox="0 0 288 24" aria-hidden="true">
+        <defs>
+          <linearGradient id="sb-flourish-l" x1="0" x2="1"><stop offset="0" stop-color="#c49e45" stop-opacity="0" /><stop offset="1" stop-color="#c49e45" stop-opacity=".85" /></linearGradient>
+          <linearGradient id="sb-flourish-r" x1="0" x2="1"><stop offset="0" stop-color="#c49e45" stop-opacity=".85" /><stop offset="1" stop-color="#c49e45" stop-opacity="0" /></linearGradient>
+        </defs>
+        <path d="M6 12H108Q118 12 120 7Q121 3 117 3Q113 3 114 7" fill="none" stroke="url(#sb-flourish-l)" stroke-width="1.2" />
+        <path d="M282 12H180Q170 12 168 17Q167 21 171 21Q175 21 174 17" fill="none" stroke="url(#sb-flourish-r)" stroke-width="1.2" />
+        <path transform="translate(126 5)" d="M3 0C3.2 2 4 2.8 6 3C4 3.2 3.2 4 3 6C2.8 4 2 3.2 0 3C2 2.8 2.8 2 3 0Z" fill="#c49e45" />
+        <path transform="translate(133 0)" d="M15 2.5A9.5 9.5 0 1 0 19 19.5 7.7 7.7 0 0 1 15 2.5Z" fill="#e6c872" />
+        <path transform="translate(153 10)" d="M3 0C3.2 2 4 2.8 6 3C4 3.2 3.2 4 3 6C2.8 4 2 3.2 0 3C2 2.8 2.8 2 3 0Z" fill="#c49e45" />
+      </svg>
     </div>
   )}
 
   <!-- Chapters Scroll Area -->
-  <div class="flex-1 min-h-0 overflow-y-auto p-3 space-y-3 text-sm text-slate-300 custom-scrollbar overscroll-contain" id={isMobileDrawer ? 'mobile-sidebar-list' : 'sidebar-list'}>
+  <div class="flex-1 min-h-0 overflow-y-auto p-3 space-y-2.5 text-sm text-slate-300 custom-scrollbar overscroll-contain" id={isMobileDrawer ? 'mobile-sidebar-list' : 'sidebar-list'}>
     {groups.map((cat, idx) => {
       const GroupIcon = getGroupIcon(cat.group);
       const hasActiveEntry = cat.entries.some((entry) => entry.id === currentId);
       const isOpenByDefault = hasActiveEntry || (!currentId && idx === 0);
 
       return (
-        <details class="sidebar-category group rounded-lg transition-colors" open={isOpenByDefault} data-category-id={cat.key}>
+        <details class="sidebar-category sidebar-card group" open={isOpenByDefault} data-category-id={cat.key}>
           <summary
-            class="list-none flex items-center justify-between cursor-pointer px-2 py-1.5 rounded-lg text-slate-300 hover:text-moon-300 hover:bg-slate-800/50 transition-colors focus:outline-none"
+            class="sidebar-summary list-none flex items-center justify-between cursor-pointer focus:outline-none"
             title={cat.group}
           >
-            <div class="flex items-center gap-2 min-w-0">
-              <GroupIcon class="w-3.5 h-3.5 text-moon-400 flex-shrink-0" />
-              <span class="text-xs font-serif font-medium uppercase tracking-wider text-slate-200 group-hover:text-moon-300 truncate">{cat.group}</span>
+            <div class="flex items-center gap-2.5 min-w-0">
+              <GroupIcon class="w-4 h-4 text-moon-300 flex-shrink-0" />
+              <span class="sidebar-group-name truncate">{cat.group}</span>
             </div>
-            <ChevronRight class="w-3.5 h-3.5 text-slate-400 transition-transform duration-200 group-open:rotate-90 flex-shrink-0" />
+            <ChevronRight class="sidebar-chevron w-3.5 h-3.5 text-slate-400 transition-transform duration-200 group-open:rotate-90 flex-shrink-0" />
           </summary>
 
-          <ul class="mt-1 space-y-0.5 pl-2.5 border-l border-slate-800/80 ml-3 py-1">
+          <ul class="space-y-0.5 pt-0.5 pb-1.5">
             {cat.entries.map((entry) => {
               const isActive = entry.id === currentId;
               return (
@@ -168,32 +178,15 @@ function getEntryIcon(id: string, title: string, groupIcon: any) {
       drop-shadow(0 0 12px rgba(177, 162, 230, 0.35));
   }
 
-  /* Gold divider: line fading out at both ends with a centre diamond. */
-  .sidebar-brand-ornament {
+  /* Gold scroll flourish either side of a crescent moon, sitting on the brand block's bottom edge. */
+  .sidebar-brand-flourish {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(196, 158, 69, 0.6) 30%,
-      rgba(196, 158, 69, 0.6) 70%,
-      transparent 100%
-    );
-  }
-
-  .sidebar-brand-ornament i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 8px;
-    height: 8px;
-    background: #0d0a1f;
-    border: 1.5px solid rgba(230, 200, 114, 0.9);
-    box-shadow: 0 0 6px rgba(230, 200, 114, 0.45);
-    transform: translate(-50%, -50%) rotate(45deg);
+    left: 1rem;
+    right: 1rem;
+    bottom: -0.75rem;
+    width: calc(100% - 2rem);
+    height: 24px;
+    pointer-events: none;
   }
 
   @media (prefers-reduced-motion: reduce) {
