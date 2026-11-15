@@ -194,15 +194,13 @@
 @media (pointer: coarse) {
   a.block[data-page-id] { min-height: 2.75rem; display: flex; align-items: center; }
   .sidebar-category > summary { min-height: 2.75rem; }
-  .mark-read, .progress-resume { min-height: 2.75rem; }
-  .pager-btn { min-height: 2.75rem; }
+  .progress-resume { min-height: 2.75rem; }
   nav[aria-label='Breadcrumb'] a,
   nav[aria-label='Previous and next page'] a:not(.pager-btn) { min-height: 2.75rem; display: inline-flex; align-items: center; padding: 0 0.5rem; }
   #close-mobile-drawer { padding: 0.75rem; }
 }
 
-/* Reading progress (page level). */
-.mark-read,
+/* Home page "Continue reading" button. */
 .progress-resume {
   display: inline-block;
   padding: 0.45rem 1rem;
@@ -214,48 +212,190 @@
   cursor: pointer;
   transition: background-color 0.15s ease;
 }
-.mark-read:hover,
 .progress-resume:hover { background: rgba(196, 158, 69, 0.22); }
-.mark-read[aria-pressed='true'] { color: #34d399; border-color: rgba(16, 185, 129, 0.5); background: rgba(16, 185, 129, 0.1); }
 .progress-resume[hidden] { display: none; }
 
-/* Bottom previous/next cards */
+/* Page footer: <> Previous )( tick )( Next <>
+   Banners point outward and have a curved notch hugging the round "mark as read" medallion.
+   Each banner is drawn from layers sharing one clip-path (the pointed tip) and one mask (the notch):
+   ::before = gold edge, ::after = ink fill inset by --edge, .pager-sheen = hover light sweep. */
 .pager {
+  --medal: 3.25rem;  /* medallion diameter */
+  --bite: 0.65rem;   /* how far each banner runs under the medallion's column */
+  --clear: 0.3rem;   /* gap between medallion and the notch */
+  --edge: 1.5px;     /* gold edge thickness */
+  --tip: 1.1rem;     /* length of the pointed end */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) calc(var(--medal) - 2 * var(--bite)) minmax(0, 1fr);
+  align-items: center;
+  padding: 0 0.3rem; /* room for the diamond studs */
 }
+.pager-slot { min-height: 1px; }
+
 .pager-btn {
+  /* notch centre (measured outward from the banner's inner edge) and radius */
+  --cx: calc(var(--medal) / 2 - var(--bite));
+  --r: calc(var(--medal) / 2 + var(--clear));
+  position: relative;
+  isolation: isolate;
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.75rem;
   min-width: 0;
-  padding: 0.85rem 1.1rem;
+  min-height: 4rem;
+  padding-block: 0.7rem;
   color: #eeeaf8;
-  background: linear-gradient(135deg, rgba(109, 79, 194, 0.12), rgba(196, 158, 69, 0.06));
-  border: 1px solid rgba(196, 158, 69, 0.45);
-  border-radius: 0.25rem;
-  box-shadow: inset 0 1px 0 rgba(246, 231, 180, 0.1);
-  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45));
+  transition: filter 0.2s ease;
 }
+.pager-prev {
+  --shape: polygon(var(--tip) 0, 100% 0, 100% 100%, var(--tip) 100%, 0 50%);
+  --notch-at: calc(100% + var(--cx));
+  --notch-at-inner: calc(100% + var(--cx) + var(--edge));
+  padding-left: calc(var(--tip) + 0.4rem);
+  padding-right: calc(var(--clear) + var(--bite) + 0.9rem);
+}
+.pager-next {
+  --shape: polygon(0 0, calc(100% - var(--tip)) 0, 100% 50%, calc(100% - var(--tip)) 100%, 0 100%);
+  --notch-at: calc(0% - var(--cx));
+  --notch-at-inner: calc(0% - var(--cx) - var(--edge));
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: calc(var(--tip) + 0.4rem);
+  padding-left: calc(var(--clear) + var(--bite) + 0.9rem);
+}
+.pager-btn::before,
+.pager-btn::after,
+.pager-sheen {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  clip-path: var(--shape);
+  -webkit-mask: var(--notch);
+  mask: var(--notch);
+  pointer-events: none;
+}
+/* gold edge */
+.pager-btn::before {
+  inset: 0;
+  --notch: radial-gradient(circle at var(--notch-at) 50%, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  background: linear-gradient(90deg, #8a6a2a, #c49e45 50%, #8a6a2a);
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+/* ink fill (and the sheen) sit --edge inside the gold */
+.pager-btn::after,
+.pager-sheen {
+  inset: var(--edge);
+  --notch: radial-gradient(circle at var(--notch-at-inner) 50%, transparent calc(var(--r) + var(--edge)), #000 calc(var(--r) + var(--edge) + 0.5px));
+}
+.pager-btn::after {
+  background:
+    radial-gradient(120% 140% at 50% 0%, rgba(109, 79, 194, 0.28), rgba(109, 79, 194, 0) 60%),
+    linear-gradient(180deg, #1d1645 0%, #120d2c 100%);
+}
+.pager-sheen {
+  z-index: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(246, 231, 180, 0.14) 47%, rgba(255, 255, 255, 0.22) 50%, rgba(246, 231, 180, 0.14) 53%, transparent 65%) no-repeat;
+  background-size: 250% 100%;
+  background-position: 150% 0;
+}
+.pager-next .pager-sheen { background-position: -50% 0; }
+.pager-prev:hover .pager-sheen,
+.pager-prev:focus-visible .pager-sheen { animation: pager-sheen-prev 0.9s ease-out 1 forwards; }
+.pager-next:hover .pager-sheen,
+.pager-next:focus-visible .pager-sheen { animation: pager-sheen-next 0.9s ease-out 1 forwards; }
+@keyframes pager-sheen-prev { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+@keyframes pager-sheen-next { from { background-position: -50% 0; } to { background-position: 150% 0; } }
+
 .pager-btn:hover,
 .pager-btn:focus-visible {
-  transform: translateY(-2px);
-  border-color: rgba(230, 200, 114, 0.9);
-  background: linear-gradient(135deg, rgba(109, 79, 194, 0.22), rgba(196, 158, 69, 0.12));
-  box-shadow: 0 4px 18px rgba(109, 79, 194, 0.2), inset 0 1px 0 rgba(246, 231, 180, 0.18);
+  outline: none;
+  filter: drop-shadow(0 0 10px rgba(139, 108, 224, 0.5)) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45));
 }
-.pager-next { grid-column: 2; justify-content: flex-end; text-align: right; }
-.pager-prev { grid-column: 1; }
-.pager-icon { width: 1.5rem; height: 1.5rem; flex-shrink: 0; color: #e6c872; transition: transform 0.15s ease; }
+.pager-btn:hover::before,
+.pager-btn:focus-visible::before { opacity: 1; background: linear-gradient(90deg, #c49e45, #f6e7b4 50%, #c49e45); }
+
+/* diamond stud on the pointed tip */
+.pager-stud {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 9px;
+  height: 9px;
+  background: #0d0a1f;
+  border: 1.5px solid #e6c872;
+  box-shadow: 0 0 6px rgba(230, 200, 114, 0.55);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.pager-prev .pager-stud { left: 0; transform: translate(-50%, -50%) rotate(45deg); }
+.pager-next .pager-stud { right: 0; transform: translate(50%, -50%) rotate(45deg); }
+.pager-btn:hover .pager-stud,
+.pager-btn:focus-visible .pager-stud { background: #e6c872; box-shadow: 0 0 10px rgba(246, 231, 180, 0.8); }
+
+.pager-icon { position: relative; z-index: 1; width: 1.5rem; height: 1.5rem; flex-shrink: 0; color: #e6c872; transition: transform 0.15s ease; }
 .pager-prev:hover .pager-icon { transform: translateX(-3px); }
 .pager-next:hover .pager-icon { transform: translateX(3px); }
-.pager-text { display: flex; flex-direction: column; min-width: 0; }
+.pager-text { position: relative; z-index: 1; display: flex; flex-direction: column; min-width: 0; }
 .pager-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #c49e45; }
 .pager-title { font-size: 0.95rem; line-height: 1.3; overflow-wrap: anywhere; }
+
+/* "Mark as read" medallion */
+.mark-read {
+  position: relative;
+  z-index: 2;
+  justify-self: center;
+  display: grid;
+  place-items: center;
+  width: var(--medal);
+  height: var(--medal);
+  margin-inline: calc(-1 * var(--bite));
+  padding: 0;
+  border-radius: 9999px;
+  color: rgba(230, 200, 114, 0.45);
+  background: radial-gradient(circle at 35% 30%, #2a2058 0%, #140f33 55%, #0b0919 100%);
+  border: var(--edge) solid rgba(196, 158, 69, 0.7);
+  box-shadow:
+    inset 0 0 0 3px #0d0a1f,
+    inset 0 0 0 4px rgba(196, 158, 69, 0.25),
+    0 3px 10px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.mark-read__icon { width: 55%; height: 55%; stroke-width: 2.75; }
+.mark-read:hover { color: #e6c872; border-color: #e6c872; }
+.mark-read:focus-visible { outline: 2px solid #e6c872; outline-offset: 3px; }
+.mark-read[aria-pressed='true'] {
+  color: #34d399;
+  border-color: #34d399;
+  background: radial-gradient(circle at 35% 30%, #12403a 0%, #0c2224 55%, #0b0919 100%);
+  box-shadow:
+    inset 0 0 0 3px #0d0a1f,
+    inset 0 0 0 4px rgba(52, 211, 153, 0.3),
+    0 0 14px rgba(52, 211, 153, 0.45),
+    0 3px 10px rgba(0, 0, 0, 0.55);
+}
+.mark-read[aria-pressed='true'] .mark-read__icon { filter: drop-shadow(0 0 4px rgba(52, 211, 153, 0.7)); }
+.mark-read.is-popping { animation: mark-read-pop 0.35s ease-out; }
+@keyframes mark-read-pop { 0% { transform: scale(1); } 45% { transform: scale(1.15); } 100% { transform: scale(1); } }
+
+/* Narrow screens: keep one row; hide the page titles (still read out) and keep label + arrow. */
 @media (max-width: 560px) {
-  .pager { grid-template-columns: 1fr; }
-  .pager-prev, .pager-next { grid-column: 1; }
+  .pager { --medal: 2.9rem; --tip: 0.9rem; }
+  .pager-btn { min-height: 3rem; gap: 0.4rem; }
+  .pager-title {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .pager-label { font-size: 0.75rem; }
+  .pager-icon { width: 1.25rem; height: 1.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pager-btn, .pager-btn::before, .pager-stud, .pager-icon, .mark-read { transition: none; }
+  .pager-btn:hover .pager-sheen, .pager-btn:focus-visible .pager-sheen { animation: none; }
+  .pager-btn:hover .pager-icon { transform: none; }
+  .mark-read.is-popping { animation: none; }
 }
 a[data-page-id][data-done]:not(.block)::after,
 a.block[data-page-id][data-done] > span::after {

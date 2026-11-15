@@ -194,7 +194,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           document.querySelectorAll('[data-mark-read]').forEach(function (b) {
             var on = !!state.done[b.getAttribute('data-mark-read')];
             b.setAttribute('aria-pressed', String(on));
-            b.textContent = on ? 'Read ✓ (click to undo)' : 'Mark as read';
+            var label = on ? 'Marked as read — tap to undo' : 'Mark as read';
+            b.setAttribute('aria-label', label);
+            b.setAttribute('title', label);
           });
         }
         document.querySelectorAll('[data-mark-read]').forEach(function (b) {
@@ -202,6 +204,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
             var id = b.getAttribute('data-mark-read');
             if (state.done[id]) delete state.done[id]; else state.done[id] = 1;
             save(); paint();
+            b.classList.remove('is-popping'); void b.offsetWidth; b.classList.add('is-popping');
           });
         });
         paint();

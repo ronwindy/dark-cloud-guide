@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import project from '../../../project.config.json';
 import { getPages, readPageFile, renderText, getNeighbours } from '../../lib/guideData';
-import { ChevronLeft, ChevronRight } from '@lucide/astro';
+import { Check, ChevronLeft, ChevronRight } from '@lucide/astro';
 
 export function getStaticPaths() {
   return getPages().map((page) => ({ params: { id: page.id }, props: { page } }));
@@ -50,23 +50,26 @@ const href = (id: string) => `${baseUrl}/guide/${id}`;
       <pre class="guide-text font-source-art custom-scrollbar" set:html={html} />
     </div>
 
-    <div class="flex justify-center">
-      <button type="button" class="mark-read" data-mark-read={page.id} aria-pressed="false">Mark as read</button>
-    </div>
-
-    <nav class="pager border-t border-slate-800/80 pt-6" aria-label="Previous and next page">
+    <nav class="pager" aria-label="Previous and next page">
       {prev ? (
         <a href={href(prev.id)} class="pager-btn pager-prev" rel="prev">
+          <span class="pager-sheen" aria-hidden="true"></span>
+          <span class="pager-stud" aria-hidden="true"></span>
           <ChevronLeft class="pager-icon" aria-hidden="true" />
           <span class="pager-text"><span class="pager-label">Previous</span><span class="pager-title">{prev.title}</span></span>
         </a>
-      ) : <span></span>}
+      ) : <span class="pager-slot" aria-hidden="true"></span>}
+      <button type="button" class="mark-read" data-mark-read={page.id} aria-pressed="false" aria-label="Mark as read" title="Mark as read">
+        <Check class="mark-read__icon" aria-hidden="true" />
+      </button>
       {next ? (
         <a href={href(next.id)} class="pager-btn pager-next" rel="next">
+          <span class="pager-sheen" aria-hidden="true"></span>
+          <span class="pager-stud" aria-hidden="true"></span>
           <span class="pager-text"><span class="pager-label">Next</span><span class="pager-title">{next.title}</span></span>
           <ChevronRight class="pager-icon" aria-hidden="true" />
         </a>
-      ) : <span></span>}
+      ) : <span class="pager-slot" aria-hidden="true"></span>}
     </nav>
   </article>
 </BaseLayout>
