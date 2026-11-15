@@ -1,0 +1,11 @@
+---
+// Page-header illustration. `name` matches a file in ./scenes/ (lowercase), set per page in manifest.json.
+interface Props { name: string; wide?: boolean }
+const { name, wide = false } = Astro.props;
+
+const scenes = import.meta.glob<{ default: any }>('./scenes/*.astro', { eager: true });
+const key = `./scenes/${name.charAt(0).toUpperCase()}${name.slice(1)}.astro`;
+const SceneSvg = scenes[key]?.default;
+if (!SceneSvg) throw new Error(`Unknown scene "${name}" (expected ${key})`);
+---
+<div class:list={['scene', { wide }]}><SceneSvg /></div>

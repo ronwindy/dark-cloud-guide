@@ -1,0 +1,7 @@
+---
+// Previous / next links (from manifest order) around the "Mark as read" seal.
+import { neighbours } from '../lib/guideData';
+interface Props { id: string }
+const { prev, next } = neighbours(Astro.props.id);
+---
+<nav class="pager">{prev ? <a class="prev" href={prev.file}><small>Previous</small>{prev.title}</a> : <span></span>}<button class="seal-btn" id="sealBtn" title="Mark as read (x)"><svg class="ic"><use href="#i-seal"/></svg><span>Mark as read</span></button>{next ? <a class="next" href={next.file}><small>Next</small>{next.title}</a> : <span></span>}</nav>

@@ -1,0 +1,10 @@
+---
+import Scene from './Scene.astro';
+import { getGroup, type PageEntry } from '../lib/guideData';
+interface Props { page: PageEntry }
+const { page } = Astro.props;
+const group = getGroup(page.group);
+---
+<header class="pagehead"><Scene name={page.scene} />
+<div class="crumb"><svg class="ic"><use href={`#i-${group.icon}`}/></svg>{group.title}</div>
+<h1>{page.heading ?? page.title}</h1></header>

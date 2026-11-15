@@ -61,289 +61,354 @@
       "id": "welcome",
       "group": "intro",
       "title": "Welcome & Overview",
-      "file": "welcome.html"
+      "file": "welcome.html",
+      "scene": "prologue"
     },
     {
       "id": "controls",
       "group": "g1",
       "title": "Controls",
-      "file": "controls.html"
+      "file": "controls.html",
+      "scene": "controls"
     },
     {
       "id": "concepts",
       "group": "g1",
       "title": "Dark Cloud Concepts",
-      "file": "concepts.html"
+      "file": "concepts.html",
+      "scene": "norune"
     },
     {
       "id": "exploration",
       "group": "g1",
       "title": "Exploration Mode",
-      "file": "exploration.html"
+      "file": "exploration.html",
+      "scene": "exploration"
     },
     {
       "id": "battle",
       "group": "g1",
       "title": "Battle Mode",
-      "file": "battle.html"
+      "file": "battle.html",
+      "scene": "weapons"
     },
     {
       "id": "fishing",
       "group": "g1",
       "title": "Fishing",
-      "file": "fishing.html"
+      "file": "fishing.html",
+      "scene": "fishing"
     },
     {
       "id": "story",
       "group": "g2",
       "title": "The Dark Story",
-      "file": "story.html"
+      "file": "story.html",
+      "scene": "story"
     },
     {
       "id": "characters",
       "group": "g2",
       "title": "Characters",
-      "file": "characters.html"
+      "file": "characters.html",
+      "scene": "moon"
     },
     {
       "id": "ch1",
       "group": "g3",
       "title": "Chapter One: Norune Village & Divine Beast Cave",
-      "file": "ch1.html"
+      "file": "ch1.html",
+      "scene": "exploration"
     },
     {
       "id": "ch2",
       "group": "g3",
       "title": "Chapter Two: Matataki Village & Wise Owl Forest",
-      "file": "ch2.html"
+      "file": "ch2.html",
+      "scene": "matataki"
     },
     {
       "id": "ch3",
       "group": "g3",
       "title": "Chapter Three: Queens & the Shipwreck",
-      "file": "ch3.html"
+      "file": "ch3.html",
+      "scene": "queens"
     },
     {
       "id": "ch4",
       "group": "g3",
       "title": "Chapter Four: Muska Lacka & Sun and Moon Temple",
-      "file": "ch4.html"
+      "file": "ch4.html",
+      "scene": "muska"
     },
     {
       "id": "ch5",
       "group": "g3",
       "title": "Chapter Five: Yellow Drops & the Moon Sea",
-      "file": "ch5.html"
+      "file": "ch5.html",
+      "scene": "moon"
     },
     {
       "id": "ch6",
       "group": "g3",
       "title": "Chapter Six: Dark Heaven Castle & Gallery of Time",
-      "file": "ch6.html"
+      "file": "ch6.html",
+      "scene": "demon"
     },
     {
       "id": "demon",
       "group": "g3",
       "title": "Bonus Dungeon: The Demon Shaft",
-      "file": "demon.html"
+      "file": "demon.html",
+      "scene": "demon"
     },
     {
       "id": "norune1",
       "group": "g4",
       "title": "Norune Village (1/2)",
-      "file": "norune1.html"
+      "file": "norune1.html",
+      "scene": "norune"
     },
     {
       "id": "norune2",
       "group": "g4",
       "title": "Norune Village (2/2)",
-      "file": "norune2.html"
+      "file": "norune2.html",
+      "scene": "norune"
     },
     {
       "id": "matataki1",
       "group": "g4",
       "title": "Matataki Village (1/2)",
-      "file": "matataki1.html"
+      "file": "matataki1.html",
+      "scene": "matataki"
     },
     {
       "id": "matataki2",
       "group": "g4",
       "title": "Matataki Village (2/2)",
-      "file": "matataki2.html"
+      "file": "matataki2.html",
+      "scene": "matataki"
     },
     {
       "id": "queens1",
       "group": "g4",
       "title": "Queens (1/2)",
-      "file": "queens1.html"
+      "file": "queens1.html",
+      "scene": "queens"
     },
     {
       "id": "queens2",
       "group": "g4",
       "title": "Queens (2/2)",
-      "file": "queens2.html"
+      "file": "queens2.html",
+      "scene": "queens"
     },
     {
       "id": "muska",
       "group": "g4",
       "title": "Muska Lacka",
-      "file": "muska.html"
+      "file": "muska.html",
+      "scene": "muska"
     },
     {
       "id": "moonfac1",
       "group": "g4",
       "title": "Moon Factory (1/2)",
-      "file": "moonfac1.html"
+      "file": "moonfac1.html",
+      "scene": "moon"
     },
     {
       "id": "moonfac2",
       "group": "g4",
       "title": "Moon Factory (2/2)",
-      "file": "moonfac2.html"
+      "file": "moonfac2.html",
+      "scene": "moon"
     },
     {
       "id": "gallery",
       "group": "g4",
       "title": "Gallery of Time",
-      "file": "gallery.html"
+      "file": "gallery.html",
+      "scene": "demon"
     },
     {
       "id": "wintro",
       "group": "g5",
       "title": "Weapons: The Basics",
-      "file": "wintro.html"
+      "file": "wintro.html",
+      "scene": "weapons"
     },
     {
       "id": "wtoan",
       "group": "g5",
       "title": "Weapon Statistics: Toan",
-      "file": "wtoan.html"
+      "file": "wtoan.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wxiao",
       "group": "g5",
       "title": "Weapon Statistics: Xiao",
-      "file": "wxiao.html"
+      "file": "wxiao.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wgoro",
       "group": "g5",
       "title": "Weapon Statistics: Goro",
-      "file": "wgoro.html"
+      "file": "wgoro.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wruby",
       "group": "g5",
       "title": "Weapon Statistics: Ruby",
-      "file": "wruby.html"
+      "file": "wruby.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wungaga",
       "group": "g5",
       "title": "Weapon Statistics: Ungaga",
-      "file": "wungaga.html"
+      "file": "wungaga.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wosmond",
       "group": "g5",
       "title": "Weapon Statistics: Osmond",
-      "file": "wosmond.html"
+      "file": "wosmond.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wevo",
       "group": "g5",
       "title": "Weapon Evolutions",
-      "file": "wevo.html"
+      "file": "wevo.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wflow1",
       "group": "g5",
       "title": "Weapon Flowcharts (1/2)",
-      "file": "wflow1.html"
+      "file": "wflow1.html",
+      "scene": "weapons"
     },
     {
       "id": "wflow2",
       "group": "g5",
       "title": "Weapon Flowcharts (2/2)",
-      "file": "wflow2.html"
+      "file": "wflow2.html",
+      "scene": "weapons"
     },
     {
       "id": "wabil",
       "group": "g5",
       "title": "Weapon Abilities",
-      "file": "wabil.html"
+      "file": "wabil.html",
+      "scene": "weapons",
+      "filter": true
     },
     {
       "id": "wsecret",
       "group": "g5",
       "title": "Secret Weapons",
-      "file": "wsecret.html"
+      "file": "wsecret.html",
+      "scene": "weapons"
     },
     {
       "id": "wattach",
       "group": "g5",
       "title": "Attachments",
-      "file": "wattach.html"
+      "file": "wattach.html",
+      "scene": "workshop",
+      "filter": true
     },
     {
       "id": "whints",
       "group": "g5",
       "title": "Weapon-Building Hints",
-      "file": "whints.html"
+      "file": "whints.html",
+      "scene": "weapons"
     },
     {
       "id": "bestiary1",
       "group": "g6",
       "title": "Bestiary",
-      "file": "bestiary1.html"
+      "heading": "Bestiary: Alexander → Dark Flower",
+      "file": "bestiary1.html",
+      "scene": "bestiary",
+      "filter": true
     },
     {
       "id": "bestiary2",
       "group": "g6",
       "title": "Bestiary",
-      "file": "bestiary2.html"
+      "heading": "Bestiary: Dasher → Monday",
+      "file": "bestiary2.html",
+      "scene": "bestiary",
+      "filter": true
     },
     {
       "id": "bestiary3",
       "group": "g6",
       "title": "Bestiary",
-      "file": "bestiary3.html"
+      "heading": "Bestiary: Moon Bug → Yammich",
+      "file": "bestiary3.html",
+      "scene": "bestiary",
+      "filter": true
     },
     {
       "id": "bosses",
       "group": "g7",
       "title": "Boss Strategies",
-      "file": "bosses.html"
+      "file": "bosses.html",
+      "scene": "bosses",
+      "filter": true
     },
     {
       "id": "items",
       "group": "g8",
       "title": "Item List",
-      "file": "items.html"
+      "file": "items.html",
+      "scene": "workshop",
+      "filter": true
     },
     {
       "id": "tips1",
       "group": "g9",
       "title": "Tips & Tricks (1/2)",
-      "file": "tips1.html"
+      "file": "tips1.html",
+      "scene": "tips"
     },
     {
       "id": "tips2",
       "group": "g9",
       "title": "Tips & Tricks (2/2)",
-      "file": "tips2.html"
+      "file": "tips2.html",
+      "scene": "tips"
     },
     {
       "id": "faq",
       "group": "g9",
       "title": "Frequently Asked Questions",
-      "file": "faq.html"
+      "file": "faq.html",
+      "scene": "prologue"
     },
     {
       "id": "outro",
       "group": "g10",
       "title": "Outro, Credits & Legal",
-      "file": "outro.html"
+      "file": "outro.html",
+      "scene": "prologue"
     }
   ]
 }

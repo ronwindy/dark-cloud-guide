@@ -1,0 +1,20 @@
+---
+// Shell of a guide page: header scene, optional filter bar, the article (slot), pager and credit.
+import BaseLayout from './BaseLayout.astro';
+import PageHead from '../components/PageHead.astro';
+import FilterBar from '../components/FilterBar.astro';
+import Pager from '../components/Pager.astro';
+import CreditFooter from '../components/CreditFooter.astro';
+import { getPage } from '../lib/guideData';
+
+interface Props {
+  id: string;
+  /** Readability layer (sentence lines, panels, route strip). Off for pages with their own layouts. */
+  reader?: boolean;
+}
+const { id, reader = true } = Astro.props;
+const page = getPage(id);
+---
+<BaseLayout id={id} title={`${page.title} · Dark Cloud Chronicle`}>
+  <PageHead page={page} />{page.filter && <FilterBar />}<article class="prose"><slot /></article><Pager id={id} /><CreditFooter />
+</BaseLayout>
