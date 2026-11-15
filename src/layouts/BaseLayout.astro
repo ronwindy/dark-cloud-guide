@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css';
 import { pages, groups } from '../lib/guideData';
-interface Props { id: string; title: string; mainClass?: string; html?: string; }
-const { id, title, mainClass = 'page', html } = Astro.props;
+interface Props { id: string; title: string; mainClass?: string }
+const { id, title, mainClass = 'page' } = Astro.props;
 const manifestJs =
   'window.DC_PAGES=' + JSON.stringify(pages) + ';window.DC_GROUPS=' + JSON.stringify(groups) + ';';
 const themeJs = "try{var t=localStorage.getItem('dc_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}";
@@ -26,7 +26,7 @@ const themeJs = "try{var t=localStorage.getItem('dc_theme');if(t)document.docume
   </header>
   <div class="shade" id="shade"></div>
   <aside class="side" id="side"><nav id="nav" aria-label="Guide contents"></nav></aside>
-  {html !== undefined ? <main class={mainClass} id="main" set:html={html}></main> : <main class={mainClass} id="main"><slot /></main>}
+  <main class={mainClass} id="main"><slot /></main>
   <script is:inline set:html={manifestJs}></script>
   <script>import '../scripts/main.js';</script>
 </body>

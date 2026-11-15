@@ -1,0 +1,12 @@
+---
+import Scene from '../Scene.astro';
+import ReadProgress from './ReadProgress.astro';
+import { pages } from '../../lib/guideData';
+---
+<section class="hero">
+<Scene name="home" wide />
+<p class="kicker">An unofficial strategy guide, rebound</p>
+<h1>Dark Cloud <span>Chronicle</span></h1>
+<p class="lede">Rebuild the world, one Atla at a time. The complete walkthrough, Georama maps, weapon trees, bestiary and boss strategies, set in a book you can alt-tab to.</p>
+<div class="cta"><a class="btn primary" id="resume" href={pages[0].file}>Begin the journey</a><ReadProgress /></div>
+</section>

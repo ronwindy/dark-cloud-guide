@@ -1,5 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { homeHtml } from '../lib/guideData';
+import Hero from '../components/home/Hero.astro';
+import GroupCard from '../components/home/GroupCard.astro';
+import CreditFooter from '../components/CreditFooter.astro';
+import { groups } from '../lib/guideData';
 ---
-<BaseLayout id="index" title="Home · Dark Cloud Chronicle" mainClass="page home" html={homeHtml()} />
+<BaseLayout id="index" title="Home · Dark Cloud Chronicle" mainClass="page home">
+<Hero />
+<div class="gridgroups">{groups.map((g) => <GroupCard group={g} />)}</div>
+<CreditFooter>Guide text by AdrenalineSL &amp; Azaroth (Version 2.0, August 14, 2002) via GameFAQs. ASCII art and maps kept verbatim. Illustrations are original.</CreditFooter>
+</BaseLayout>

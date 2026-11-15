@@ -1,0 +1,5 @@
+---
+// "N of M pages read" bar. Filled in on the client from the saved read state.
+import { pages } from '../../lib/guideData';
+---
+<div class="progress"><div class="bar"><i id="barFill"></i></div><small id="barTxt">0 of {pages.length} pages read</small></div>

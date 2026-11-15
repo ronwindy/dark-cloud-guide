@@ -1,0 +1,8 @@
+---
+// One sidebar group on the home page: its icon, title and page list.
+import { pages, type GroupEntry } from '../../lib/guideData';
+interface Props { group: GroupEntry }
+const { group } = Astro.props;
+const groupPages = pages.filter((p) => p.group === group.id);
+---
+<section class="gcard"><h2><svg class="ic"><use href={`#i-${group.icon}`}/></svg>{group.title}</h2><div class="plist">{groupPages.map((p) => <a class="pcard" data-id={p.id} href={p.file}><span class="tick"></span><span>{p.title}</span></a>)}</div></section>

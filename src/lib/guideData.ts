@@ -1,5 +1,3 @@
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
 import manifest from '../data/manifest.json';
 
 export type GroupEntry = { id: string; title: string; icon: string };
@@ -37,9 +35,3 @@ export function neighbours(id: string): { prev?: PageEntry; next?: PageEntry } {
   return { prev: pages[i - 1], next: pages[i + 1] };
 }
 
-// Resolved from the project root (import.meta.url points into dist/ during build).
-const dir = join(process.cwd(), 'src', 'data');
-
-export function homeHtml(): string {
-  return readFileSync(join(dir, 'home.html'), 'utf8');
-}
